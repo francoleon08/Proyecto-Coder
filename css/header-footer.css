@@ -1,0 +1,147 @@
+/* header y footer */
+header {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(194, 187, 187);
+}
+
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-item a {
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: yellow;
+}
+
+footer {
+    width: 80%;
+    margin: auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(194, 187, 187);
+}
+
+
+.contacto-footer {
+    float: left;
+}
+
+.logo-footer {
+    display: inline-block;
+}
+
+.redes-footer {
+    float: right;
+}
+
+.contacto-footer ul li {
+    list-style: none;
+    margin: 0 20px;
+    text-align: left;
+}
+
+.redes-footer ul li {
+    list-style: none;
+    margin: 0 20px;
+}
+
+/* index */
+html {
+    text-align: center;
+}
+
+.banner {
+    padding: 15px 0;
+}
+
+main {
+    margin: 15px;
+    padding: 15px;
+    width: 80%;    
+}
+
+.articulo-uno, .articulo-dos {
+    margin: 15px;
+    padding: 50px;
+    overflow: hidden;
+}
+
+.item {
+    width: 50%;
+    float: left;
+}
+
+.posicion-texto {
+    float: right;
+}
+
+.posicion-imagen {
+    float: left;
+}
+
+.enlace-verMas {
+    width: max-content;
+    border: solid black;
+    background-color: rgba(190, 176, 176, 0.76);
+    padding: 15px;
+    margin: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enlace-verMas:hover {
+    background-color: red;
+}
+
+ .enlace-verMas a {
+    text-decoration: none;
+}
+
+/* contacto */
+section {
+    text-align: center;
+}
+
+.contacto {
+    padding: 10px;
+    width: 80%;
+    margin: auto;
+}
+
+.item {
+    width: 50%;
+    float: left;
+}
+
+.item form {
+    padding: 100px;
+    margin: auto;
+}
+
+.form-section {
+    padding: 20px;
+}
+
+/* productos */
+.banner-productos {
+    text-align: center;
+    padding: 10px;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}

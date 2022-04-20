@@ -1,0 +1,35 @@
+html {
+    text-align: center;
+}
+.banner {
+    padding: 10px;
+}
+
+main {
+    padding: 10px;
+    width: 80%;
+    margin: auto;           
+}
+
+.articulo-uno, .articulo-dos {
+    padding: 50px;
+    overflow: hidden;
+}
+
+.item {
+    width: 50%;
+    float: left;
+}
+
+.posicion-texto {
+    float: right;
+}
+
+.posicion-imagen {
+    float: left     ;
+}
+
+.enlace-verMas {    
+    padding: 10px;
+}
+
