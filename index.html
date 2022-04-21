@@ -13,36 +13,32 @@
 </head>
 
 <body>
-    <header class="headerIndex header--scroll">
-        <div class="logo-header">
-            <a href="index.html"><img src="assets/img/logo 3.png"alt="Cuadros Deco"></a>
+    <header class="header header__index">
+        <div class="header__logo">
+            <a href="index.html"><img src="assets/img/logo 3.png" alt="Cuadros Deco" class="header__img"></a>
         </div>
-        <nav>
-            <ul>
-                <li class="nav-item"><a href="index.html">Inicio</a></li>
-                <li class="nav-item"><a href="pages/productos.html">Productos</a></li>
-                <li class="nav-item"><a href="pages/contacto.html">Contacto</a></li>
-                <li class="nav-item"><a href="pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
-                <li class="nav-item"><a href="pages/tutorial.html">Tutoriales de compra</a></li>
+        <nav class="header__nav">
+            <ul class="nav__items">
+                <li class="nav__item"><a href="index.html">Inicio</a></li>
+                <li class="nav__item"><a href="pages/productos.html">Productos</a></li>
+                <li class="nav__item"><a href="pages/contacto.html">Contacto</a></li>
+                <li class="nav__item"><a href="pages/preguntas-frecuentes.html">Preguntas frecuentes</a></li>
+                <li class="nav__item"><a href="pages/tutorial.html">Tutoriales de compra</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- imagen principal (banner) -->
-    <div class="banner bannerBackgroundImagen">
-        <img src="assets/img/banners/8eddaf2c-ea26-46b5-8248-2c3886097316.svg" alt="Imagen principal de la pagina" class="banner-index">
-    </div>
-
-    <div class="banner__scroll_button">
-        <a href="#cuadros"><span></span></a>
+    <div class="banner">
+        <img src="assets/img/banners/8eddaf2c-ea26-46b5-8248-2c3886097316.svg" alt="Banner Cuadros Deco" class="banner__img">
     </div>
 
     <!-- main, seccion principal de la pagina con sus articulos destacados -->
-    <main class="main-index">
-        <h1 class="tituloMainIndex" id="cuadros">Cuadros Deco</h1>
-        <h2 class="subtituloMainIndex">Nuestros cuadros más vendidos</h2>
-        <article class="articulo">
-            <div class="textoArticulo">
+    <main class="main__index">
+        <h1 class="main__titulo">Cuadros Deco</h1>
+        <h2 class="main_subtitulo">Nuestros cuadros más vendidos</h2>
+        <article class="main__articulo">
+            <div class="articulo__item articulo__texto">
                 <h2>Articulo 1</h2>
                 <div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, voluptatum voluptatibus fugiat
@@ -57,13 +53,13 @@
                     </p>
                 </div>
             </div>
-            <div class="itemArticulo">
-                <img src="assets/img/seccion productos (fondo blanco)/IMG_5104.JPEG" alt="articulo 1">
+            <div class="articulo__item">
+                <img src="assets/img/seccion productos (fondo blanco)/IMG_5104.JPEG" alt="articulo 1" class="articulo__img">
             </div>
         </article>
 
-        <article class="articulo articulo--invertido">
-            <div class="textoArticulo">
+        <article class="main__articulo articulo__invertido">
+            <div class="articulo__item articulo__texto">
                 <h2>Articulo 1</h2>
                 <div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, voluptatum voluptatibus fugiat
@@ -78,13 +74,13 @@
                     </p>
                 </div>
             </div>
-            <div class="itemArticulo">
-                <img src="assets/img/seccion productos (fondo blanco)/IMG_5101.JPEG" alt="articulo 1">
+            <div class="articulo__item">
+                <img src="assets/img/seccion productos (fondo blanco)/IMG_5101.JPEG" alt="articulo 1" class="articulo__img">
             </div>
         </article>
 
-        <article class="articulo">
-            <div class="textoArticulo">
+        <article class="main__articulo">
+            <div class="articulo__item articulo__texto">
                 <h2>Articulo 1</h2>
                 <div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, voluptatum voluptatibus fugiat
@@ -99,13 +95,13 @@
                     </p>
                 </div>
             </div>
-            <div class="itemArticulo">
-                <img src="assets/img/seccion productos (fondo blanco)/IMG_3794.JPEG" alt="articulo 1">
+            <div class="articulo__item">
+                <img src="assets/img/seccion productos (fondo blanco)/IMG_3794.JPEG" alt="articulo 1" class="articulo__img">
             </div>
         </article>
 
-        <article class="articulo articulo--invertido">
-            <div class="textoArticulo">
+        <article class="main__articulo articulo__invertido">
+            <div class="articulo__item articulo__texto">
                 <h2>Articulo 1</h2>
                 <div>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aliquam, voluptatum voluptatibus fugiat
@@ -120,33 +116,33 @@
                     </p>
                 </div>
             </div>
-            <div class="itemArticulo">
-                <img src="assets/img/seccion productos (fondo blanco)/IMG_0609.JPEG" alt="articulo 1">
+            <div class="articulo__item">
+                <img src="assets/img/seccion productos (fondo blanco)/IMG_1268.JPEG" alt="articulo 1" class="articulo__img">
             </div>
         </article>
 
         <!-- enlace para ver mas productos -->
-        <div class="enlanceProductosMainIndex">
-            <a href="pages/productos.html">Ver más productos</a>
+        <div class="main__boton">
+            <a href="pages/productos.html"  class="boton__link">Ver más productos</a>
         </div>
     </main>
 
-    <footer>
-        <div class="contacto-footer">
-            <a class="enlaceContacto-footer" href="pages/contacto.html">Contacto:</a>
+    <footer class="footer">
+        <div class="footer__contacto">
+            <a class="contacto__titulo" href="pages/contacto.html">Contacto:</a>
             <ul>
-                <li><a href="mailto:correo@gmail.com" target="blank_" class="linksFooter">Envíanos un correo</a></li>
-                <li><a href="https://api.whatsapp.com/send?phone=0123456789&text=Hola, Nececito mas informacion!"
+                <li class="contacto__item"><a href="mailto:correo@gmail.com" target="blank_" class="linksFooter">Envíanos un correo</a></li>
+                <li class="contacto__item"><a href="https://api.whatsapp.com/send?phone=0123456789&text=Hola, Nececito mas informacion!"
                         target="blank_" class="linksFooter">Envíanos un mensaje de WhatsApp</a></li>
             </ul>
         </div>
-        <a class="enlace-footer" href="index.html"><img src="assets/img/logo 3.png"
-                    alt="Logo cuadros deco"></a>
-        <div class="redes-footer">
+        <a class="footer__logo" href="index.html"><img src="assets/img/logo 3.png"
+                    alt="Logo cuadros deco" class="footer__logo--img"></a>
+        <div class="footer__redes">
             <p>Seguinos en:</p>
-            <ul>
-                <li><a href="https://www.facebook.com/cuadrosdecobahia/" target="blank_" class="linksFooter">Facebook</a></li>
-                <li><a href="https://www.instagram.com/cuadrosdecobahia/?hl=es" target="blank_" class="linksFooter">Instagram</a></li>
+            <ul class="redes__liks">
+                <li class="redes__link"><a href="https://www.facebook.com/cuadrosdecobahia/" target="blank_" class="linksFooter">Facebook</a></li>
+                <li class="redes__link"><a href="https://www.instagram.com/cuadrosdecobahia/?hl=es" target="blank_" class="linksFooter">Instagram</a></li>
             </ul>
         </div>
     </footer>

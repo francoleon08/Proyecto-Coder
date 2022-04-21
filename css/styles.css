@@ -1,65 +1,79 @@
+/* reset */
 * {
     margin: 0;
     padding: 0;
 }
 
+/* fuente del logo */
+@font-face {
+    font-family: Biysk;
+    src: url(../assets/fonts/Biysk/Biysk.ttf);
+}
+
 h1,
 h2,
 h3,
+h4,
+h5,
+h6,
 p,
 a {
     font-family: 'Roboto', sans-serif;
 }
 
-h1,h2,h3 {
+h1,
+h2,
+h3 {
     color: rgb(255, 140, 50);
 }
 
-p,a {
+p,
+a {
     color: rgb(6, 17, 60);
 }
 
 /* header */
-header {
+.header {
     margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
     padding: 0.8rem;
-    overflow: hidden;
     width: 100%;
+    /* fondo temporal, no es estetico (quiero hacerlo transparente y al bajar tome un color */
+    background-color: rgb(221, 221, 221);
 }
 
-.headerIndex {
+.header__index {
     overflow: hidden;
     position: fixed;
     top: 0;
 }
 
-.logo-header a img {
+.header__img {
     width: 60%;
 }
 
-.logo-header a img:hover {
+.header__img:hover {
     opacity: 90%;
 }
 
-nav ul li {
+.nav__items li {
     list-style: none;
     display: inline-block;
     margin: 0 0.8rem;
 }
 
-.nav-item a {
+.nav__item a {
     text-decoration: none;
 }
 
-.nav-item a:hover {
+.nav__item a:hover {
     color: rgb(128, 128, 128);
 }
 
 /* footer */
-footer {
+.footer {
     display: flex;
     align-items: center;
     padding: 1rem;
@@ -76,194 +90,130 @@ footer {
 }
 
 /* left */
-.contacto-footer {
+.footer__contacto {
     display: flex;
     align-items: center;
 }
 
-.contacto-footer a {
+.footer__contacto a {
     text-decoration: none;
     padding-left: 1rem;
 }
 
-.contacto-footer ul li {
+.contacto__item {
     list-style: none;
 }
 
 
 /* center */
-.enlace-footer {
+.footer__logo {
     text-align: center;
     display: flex;
     justify-content: center;
 }
 
-.enlace-footer img {
+.footer__logo--img {
     width: 60%;
 }
 
-.enlace-footer img:hover {
+.footer__logo--img:hover {
     opacity: 90%;
 }
 
 /* rigth */
-.redes-footer {
+.footer__redes {
     padding: 0 2rem;
     display: flex;
     justify-content: flex-end;
 }
 
-.redes-footer p {
+.footer__redes p {
     text-align: center;
 }
 
-.redes-footer ul {
+.redes__links {
     list-style-type: none;
 }
 
-.redes-footer ul li {
+.redes__link {
     display: inline;
 }
 
-.redes-footer ul li a {
+.redes__link a {
     text-decoration: none;
     padding-left: 1rem;
 }
 
 /* index */
-.banner,
-.main-index {
-    text-align: center;
-}
-
-/* copiado */
-/* .bannerBackgroundImagen {
-    left: 0;
-    background-image: url("../assets/img/banners/8eddaf2c-ea26-46b5-8248-2c3886097316.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.banner__img {
+    width: 100%;
+    /* ocupa el 100% de la pag */
     height: 100vh;
 }
 
-.banner__scroll_button {
-    flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-}
-
-.banner__scroll_button a {
-    position: absolute;
-    bottom: 20px;
-    z-index: 2;
-    display: inline-block;
-    color: #0B2027;
-    letter-spacing: .1em;
-    text-decoration: none;
-    display: flex;
-    justify-content: center;
-    padding-top: 60px;
-}
-
-.banner__scroll_button a span {
-    position: absolute;
-    top: 0;
-    width: 46px;
-    height: 46px;
-    border: 1px solid #0B2027;
-    border-radius: 100%;
-    box-sizing: border-box;
-}
-
-.banner__scroll_button a span::after {
-    position: absolute;
-    top: 10px;
-    left: 14px;
-    content: '';
-    width: 16px;
-    height: 16px;
-    border-left: 1px solid #0B2027;
-    border-bottom: 1px solid #0B2027;
-    transform: rotate(-45deg);
-} */
-/* copiado */
-
-.banner-index {
-    width: 100%;
-    top: -3rem;
-    /* height: 100vh; */ /* ocupa el 100% de la pag */
-}
-
-.main-index {
+.main__index {
+    text-align: center;
     margin: auto;
     padding: 1rem;
     width: 80%;
 }
 
-.tituloMainIndex {
+.main__titulo {
     font-size: 5rem;
     border-top: solid 1px;
 }
 
-.subtituloMainIndex {
-    font-size:2rem;
+.main__subtitulo {
+    font-size: 2rem;
     color: rgb(220, 140, 50);
 }
 
-.main-index article {
+.main__articulo {
     display: flex;
     padding: 2rem 0;
 }
 
-.textoArticulo {
+.articulo__texto {
     background-color: rgb(221, 221, 221);
-    border-radius: 0.7rem;
 }
 
-.textoArticulo h2 {
+.articulo__texto h2,
+.articulo__texto p {
     padding: 1rem;
-}
-
-.textoArticulo p {
-    padding: 1rem;
-}
-
-.main-index .articulo div {
-    padding: 0 1rem;
-    margin: auto;
     text-align: justify;
 }
 
-.itemArticulo img{
+.articulo__item {
+    padding: 0 1rem;
+    margin: auto;
+    border-radius: 0.7rem;
+}
+
+.articulo__img {
     max-width: 300px;
     max-height: 300px;
     border-radius: 0.7rem;
 }
 
-.articulo--invertido {
+.articulo__invertido {
     flex-direction: row-reverse;
 }
 
-.enlanceProductosMainIndex {
-    padding: 0 0 2rem 0;
-    
+.main__boton {
+    padding-bottom: 2rem;
+
 }
 
-.enlanceProductosMainIndex a{
+.boton__link {
     text-decoration: none;
     font-size: x-large;
     padding: 10px;
     border-radius: 0.7rem;
     background-color: rgb(221, 221, 221);
-    
+
 }
 
-.enlanceProductosMainIndex a:hover {
+.boton__link:hover {
     color: rgb(128, 128, 128);
 }
 
