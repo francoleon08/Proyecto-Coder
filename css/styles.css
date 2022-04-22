@@ -42,7 +42,6 @@ a {
     align-items: center;
     justify-content: space-around;
     padding: 0.8rem;
-    width: 100%;
     /* fondo temporal, no es estetico (quiero hacerlo transparente y al bajar tome un color */
     background-color: rgb(221, 221, 221);
 }
@@ -51,6 +50,7 @@ a {
     overflow: hidden;
     position: fixed;
     top: 0;
+    width: 100%; /* cambia por el background */
 }
 
 .header__img {
@@ -261,6 +261,81 @@ a {
 }
 
 /* contacto */
+.section__contacto h1 {
+    text-align: center;
+    padding: 2rem;
+    font-size: 5rem;
+}
+
+.contacto__contenedor {
+    margin: auto;
+    width: 80%;
+    padding-bottom: 2rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    
+}
+
+.contenedor__articulo {
+    width: 70%;
+}
+
+.contenedor__formulario {
+    display: flex;
+    justify-content: center;
+    width: 30%;
+}
+
+
+.contenedor__articulo,
+.contenedor__formulario {
+    padding: 0 1rem;
+    text-align: center;
+}
+
+.contenedor__articulo--item {
+    padding: 1rem 0;
+}
+
+.contenedor__artiuculo--texto p{
+    text-align: justify;
+}
+/* formulario */
+.formulario {
+    width: 100%;
+}
+
+.formulario h3 {
+    font-size: 1.5rem;
+}
+
+.formulario__items {
+    padding: 1rem 0;    
+}
+
+.formulario__item {
+    width: 80%;
+    height: 2rem;
+    text-align: center;
+    border-radius: 0.3rem;
+    font-family: 'Roboto';
+}
+
+.formulario__item--consulta {
+    width: 90%;
+    height: 200px;
+    padding: 0.5rem 1rem;
+    resize: none;
+    border-radius: 0.3rem;
+    font-family: 'Roboto';
+}
+
+.formulario__item--boton {
+    padding: 0.3rem 0.8rem;
+    border-radius: 0.3rem;
+    font-family: 'Roboto';
+}
 
 /* FAQs */
 

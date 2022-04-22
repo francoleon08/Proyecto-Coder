@@ -29,47 +29,47 @@
     </header>
 
     <!-- fila -->
-    <section id="contacto">
-        <h1>Contacto:</h1>        
-        <div class="contacto">
+    <section class="section__contacto">
+        <h1>Contacto:</h1>
+        <div class="contacto__contenedor">
             <!-- columna 1 -->
-            <article class="item">
-                <h2>Estamos aqui para ayudarte</h2> <!-- Subtitulo -->
-                <div class="text">
+            <article class="contenedor__articulo">
+                <h2 class="contenedor__articulo--item">Estamos aqui para ayudarte</h2> <!-- Subtitulo -->
+                <div class="contenedor__artiuculo--texto contenedor__articulo--item">
                     <!-- texto -->
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis fuga molestias, sed, a</p>
-                    <p>rchitecto tenetur eligendi vel saepe quae pariatur magnam accusantium, adipisci</p>
-                    <p> quos doloribus distinctio hic corrupti itaque minima debitis?</p>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ad reiciendis recusandae laboriosam? Voluptatum, vitae distinctio? Voluptates inventore cum, quis provident qui libero aliquid mollitia eos? Delectus dolores eaque fugiat.</p>
                 </div>
-                <div>
+                <div class="contenedor__articulo--img contenedor__articulo--item">
                     <!-- imagen -->
                     <img src="http://via.placeholder.com/400" alt="imagen de referencia para contacto">
                 </div>
             </article>
-    
+
             <!-- columna 2 -->
-            <div class="item">
-                <!-- Contacto -->            
-                <form method="POST">  
-                    <h3>Envianos un mensaje</h3>              
-                    <div class="form-section">
-                        <input type="text" class="form-input" name="nombre_apellido" placeholder="Nombre y apellido" required>
+            <div class="contenedor__formulario">
+                <!-- Contacto -->
+                <form class="formulario">
+                    <h3 class="formulario__items">Envianos un mensaje</h3>
+                    <div class="formulario__items">
+                        <input type="text" class="formulario__item" name="nombre_apellido" placeholder="Nombre y apellido"
+                            required>
                     </div>
-    
-                    <div class="form-section">
-                        <input type="email" class="form-input" type="email" name="mail" placeholder="Correo electrónico" required>
+
+                    <div class="formulario__items">
+                        <input type="email" class="formulario__item" type="email" name="mail" placeholder="Correo electrónico"
+                            required>
                     </div>
-    
-                    <div class="form-section">
-                        <input type="text" class="form-input" name="asunto" placeholder="Asunto">
+
+                    <div class="formulario__items">
+                        <input type="text" class="formulario__item" name="asunto" placeholder="Asunto" spellcheck="true">
                     </div>
-    
-                    <div class="form-section">
-                        <textarea class="form-input" name="consulta" placeholder="Escriba su consulta aquí"></textarea>
+
+                    <div class="formulario__items">
+                        <textarea class="formulario__item--consulta" name="consulta" placeholder="Escriba su consulta aquí"  spellcheck="true"></textarea>
                     </div>
-    
-                    <div class="form-section">
-                        <input type="submit" class="form-input" name="Enviar">
+
+                    <div class="formulario__items">
+                        <input type="submit" class="formulario__item--boton" name="Enviar">
                     </div>
                 </form>
             </div>
