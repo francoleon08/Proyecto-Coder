@@ -4,12 +4,6 @@
     padding: 0;
 }
 
-/* fuente del logo */
-@font-face {
-    font-family: Biysk;
-    src: url(../assets/fonts/Biysk/Biysk.ttf);
-}
-
 h1,
 h2,
 h3,
@@ -18,21 +12,20 @@ h5,
 h6,
 p,
 a {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Quicksand', 'Roboto', sans-serif;
 }
 
-h1 {
-    color: rgb(255, 159, 50);
+h1, a {
+    color: rgb(26, 60, 64);
 }
 
 h2,
 h3 {
-    color: rgb(231, 147, 52);
+    color: rgb(29, 92, 99);
 }
 
-p,
-a {
-    color: rgb(6, 17, 60);
+p {
+    color: rgb(65, 125, 122);
 }
 
 /* header */
@@ -41,9 +34,9 @@ a {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 0.8rem;
+    padding: 0.3rem 0;
     /* fondo temporal, no es estetico (quiero hacerlo transparente y al bajar tome un color */
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(237, 230, 219);
 }
 
 .header__scroll {
@@ -54,7 +47,7 @@ a {
 }
 
 .header__img {
-    width: 60%;
+    width: 15%;
 }
 
 .header__img:hover {
@@ -64,7 +57,7 @@ a {
 .nav__items li {
     list-style: none;
     display: inline-block;
-    margin: 0 0.8rem;
+    margin: 0 0.6rem;
 }
 
 .nav__item a {
@@ -79,9 +72,9 @@ a {
 .footer {
     display: flex;
     align-items: center;
-    padding: 1rem;
+    padding: 0.3rem 0;
     justify-content: space-around;
-    background-color: rgb(221, 221, 221);
+    background-color: rgb(237, 230, 219);
 }
 
 .linksFooter {
@@ -101,13 +94,20 @@ a {
 .footer__contacto a {
     text-decoration: none;
     padding-left: 1rem;
+    color: rgb(65, 125, 122);   
+}
+
+.footer__contacto ul li a {
+    color: rgb(26, 60, 64);
 }
 
 .contacto__item {
     list-style: none;
 }
 
-
+.contacto__titulo:hover {
+    color: rgb(128, 128, 128);
+}
 /* footer - center */
 .footer__logo {
     text-align: center;
@@ -116,7 +116,7 @@ a {
 }
 
 .footer__logo--img {
-    width: 60%;
+    width: 15%;
 }
 
 .footer__logo--img:hover {
@@ -150,7 +150,7 @@ a {
 /* index */
 /* banner responsive */
 .banner__img {
-    background-image: url(../assets/img/banners/8eddaf2c-ea26-46b5-8248-2c3886097316.svg);
+    background-image: url(../assets/img/index/banner.svg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -244,20 +244,29 @@ a {
 
 .container-productos {
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .fila-productos {
     display: flex;
-    justify-content: space-evenly;
     padding: 1rem 0;
+    margin: auto;
 }
 
-.producto div {
-    border: 1px solid black;
+.producto {
+    padding: 0 1rem;
+    display: flex;
+}
+
+.producto div img {
+    border-radius: 0.7rem;
 }
 
 .box-cuadro {
     margin: 1rem;
+
 }
 
 /* contacto */
@@ -301,7 +310,12 @@ a {
 .contenedor__artiuculo--texto p{
     text-align: justify;
 }
-/* formulario */
+
+.contenedor__articulo--img img {
+    width: 50%;
+    height: 80%;
+}
+/* formulario de contacto */
 .formulario {
     width: 100%;
 }
@@ -332,34 +346,86 @@ a {
 }
 
 .formulario__item--boton {
-    padding: 0.3rem 0.8rem;
+    padding: 0.3rem 1rem;
     border-radius: 0.3rem;
     font-family: 'Roboto';
+    font-size: x-large;
 }
+
+.formulario__item--boton:hover {
+    color: rgb(128, 128, 128);
+}
+
 
 /* FAQs */
-
-/* tutorial */
-.titulo-tutorial {
+.section__faqs {
     text-align: center;
-    padding-top: 2rem;
+    background-color: rgb(251, 219, 156);  
 }
 
-.main-tutorial {
+.main__faqs {
     width: 80%;
     margin: auto;
+    padding: 2rem;
+}
+
+.main__faqs--titulo {
+    text-align: center;
+    padding-bottom: 1rem;
+}
+
+.faqs__articulo {
+    padding: 1rem;
+}
+
+.faqs__enlace {
+    text-align: center;
+    padding-top: 1rem;
+    
+}
+
+.faqs__enlace a { /* idem a boton "ver mas" de index */
+    text-decoration: none;
+    font-size: x-large;
+    padding: 0.8rem;
+    border-radius: 0.7rem;
+    background-color: rgb(221, 221, 221);
+}
+
+.faqs__enlace a:hover {
+    color: rgb(128, 128, 128);
+}
+
+/* tutorial */
+.tutorial__titulo {
+    text-align: center;
+    padding: 2rem;
+    background-image: url(../assets/img/tutorial/fondo\ titulo.jpg);
+    background-size: cover;
+    background-position: center center;    
+}
+
+.tutorial__titulo h1 {
+    padding-bottom: 0.5rem;
+}
+
+.main__tutorial {
+    width: 80%;
+    margin: auto;
+    padding: 2rem;
+}
+
+.tutorial--texto--parrafo {
+    padding: 1rem 2rem;
     text-align: justify;
 }
 
-.main-tutorial article {
-    padding: 1rem 0;
-}
-
-.video-tutorial {
+.articulo__tutorial--video {
     text-align: center;
+    padding: 1rem;
 }
 
-.video-tutorial iframe {
+.articulo__tutorial--video iframe {
     width: 720px;
     height: 480px;
 }
