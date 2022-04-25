@@ -247,6 +247,7 @@ p {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 1rem;
 }
 
 .fila-productos {
@@ -376,6 +377,11 @@ p {
 
 .faqs__articulo {
     padding: 1rem;
+}
+
+.articulo__item p {
+    padding: 1rem 2rem;
+    text-align: justify;
 }
 
 .faqs__enlace {
