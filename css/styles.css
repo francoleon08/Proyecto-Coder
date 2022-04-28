@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+/* CLASES GENERALES */
 h1,
 h2,
 h3,
@@ -28,6 +29,17 @@ p {
     color: rgb(65, 125, 122);
 }
 
+/* clase general para todos los links */
+.link__hover:hover {
+    color: rgb(128, 128, 128);
+}
+
+a {
+    font-weight: bold;
+}
+
+/* CLASES GENERALES */
+
 /* header */
 .header {
     margin: auto;
@@ -39,11 +51,16 @@ p {
     background-color: rgb(237, 230, 219);
 }
 
-.header__scroll {
+.header__index {
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%; /* cambia por el background */
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.header--scroll {
+    background-color: rgb(237, 230, 219);
 }
 
 .header__img {
@@ -64,8 +81,8 @@ p {
     text-decoration: none;
 }
 
-.nav__item a:hover {
-    color: rgb(128, 128, 128);
+.nav__item:hover {
+    transform: scale(110%);
 }
 
 /* footer */
@@ -79,10 +96,6 @@ p {
 
 .linksFooter {
     font-size: 90%;
-}
-
-.linksFooter:hover {
-    color: rgb(128, 128, 128);
 }
 
 /* footer - left */
@@ -105,9 +118,6 @@ p {
     list-style: none;
 }
 
-.contacto__titulo:hover {
-    color: rgb(128, 128, 128);
-}
 /* footer - center */
 .footer__logo {
     text-align: center;
@@ -193,7 +203,7 @@ p {
 }
 
 .articulo__item {
-    padding: 0 1rem;
+    padding: 0 1.5rem;
     margin: auto;
     border-radius: 0.7rem;
 }
@@ -202,6 +212,7 @@ p {
     max-width: 300px;
     max-height: 300px;
     border-radius: 0.7rem;
+    box-shadow: 1rem 1rem 1rem rgb(221, 221, 221);
 }
 
 .articulo__invertido {
@@ -222,54 +233,47 @@ p {
 
 }
 
-.boton__link:hover {
-    color: rgb(128, 128, 128);
-}
-
 /* productos */
 .banner__productos {
     display: flex;
     justify-content: center;
 }
 
-.container-productos h1 {
-    font-size: 5rem;
-    margin: auto;
-}
-
-.cuadro {
-    max-width: 300px;
-    max-height: 300px;
-}
-
-.container-productos {
-    text-align: center;
+#contenedor__grilla {
+    padding: 2rem;
     display: flex;
-    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    padding-bottom: 1rem;
 }
 
-.fila-productos {
-    display: flex;
-    padding: 1rem 0;
-    margin: auto;
+#grilla__productos {
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+    align-items: center;
 }
 
-.producto {
-    padding: 0 1rem;
-    display: flex;
+.producto__contenedor {
+    text-align: center;
 }
 
-.producto div img {
+.producto__item {
     border-radius: 0.7rem;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(80%);
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(221, 221, 221);
 }
 
-.box-cuadro {
-    margin: 1rem;
-
+.producto__item:hover {
+    filter: brightness(100%);
 }
 
+.producto__contenedor:hover {
+    transform: scale(120%);
+}
 /* contacto */
 .section__contacto h1 {
     text-align: center;
@@ -353,15 +357,17 @@ p {
     font-size: x-large;
 }
 
-.formulario__item--boton:hover {
-    color: rgb(128, 128, 128);
-}
-
-
 /* FAQs */
 .section__faqs {
     text-align: center;
-    background-color: rgb(251, 219, 156);  
+    padding-top: 1rem;
+    
+}
+
+.section__faqs img {
+    border-radius: 1rem;
+    width: 70%;
+    box-shadow: 1rem 1rem 1rem rgb(221, 221, 221);
 }
 
 .main__faqs {
@@ -398,21 +404,29 @@ p {
     background-color: rgb(221, 221, 221);
 }
 
-.faqs__enlace a:hover {
-    color: rgb(128, 128, 128);
-}
-
 /* tutorial */
 .tutorial__titulo {
     text-align: center;
     padding: 2rem;
     background-image: url(../assets/img/tutorial/fondo\ titulo.jpg);
     background-size: cover;
-    background-position: center center;    
+    background-position: center center; 
 }
 
-.tutorial__titulo h1 {
-    padding-bottom: 0.5rem;
+.tutorial__titulo--contenedor {
+    background-color: rgba(0, 0, 0, 0.6);
+    border-radius: 0.7rem;
+    display: inline-block;
+    padding: 1rem;
+    box-shadow: 0 0 50px 0 rgb(0, 0, 0);
+}
+
+.tutorial__titulo--contenedor h1 {
+    color: rgb(50, 152, 163);
+}
+
+.tutorial__titulo--contenedor h2{
+    color: rgb(41, 120, 129);
 }
 
 .main__tutorial {

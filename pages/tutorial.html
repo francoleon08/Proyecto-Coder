@@ -15,7 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
-    
+
     <title>Cuadros Deco - Tutorial de compra</title>
 </head>
 
@@ -26,18 +26,21 @@
         </div>
         <nav class="header__nav">
             <ul class="nav__items">
-                <li class="nav__item"><a href="../index.html">Inicio</a></li>
-                <li class="nav__item"><a href="productos.html">Productos</a></li>
-                <li class="nav__item"><a href="contacto.html">Contacto</a></li>
-                <li class="nav__item"><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
-                <li class="nav__item"><a href="tutorial.html">Tutoriales de compra</a></li>
+                <li class="nav__item"><a href="../index.html" class="link__hover">Inicio</a></li>
+                <li class="nav__item"><a href="productos.html" class="link__hover">Productos</a></li>
+                <li class="nav__item"><a href="contacto.html" class="link__hover">Contacto</a></li>
+                <li class="nav__item"><a href="preguntas-frecuentes.html" class="link__hover">Preguntas frecuentes</a>
+                </li>
+                <li class="nav__item"><a href="tutorial.html" class="link__hover">Tutoriales de compra</a></li>
             </ul>
         </nav>
-    </header> 
+    </header>
 
     <div class="tutorial__titulo">
-        <h1>¿No sabes como comprar?</h1>
-        <h2>Te contamos como</h2>
+        <div class="tutorial__titulo--contenedor">
+            <h1>¿No sabes como comprar?</h1>
+            <h2>Te contamos como</h2>
+        </div>
     </div>
 
     <main class="main__tutorial">
@@ -55,14 +58,13 @@
                 </div>
             </div>
             <div class="articulo__tutorial--video">
-                <iframe  src="https://www.youtube.com/embed/bbKL6tWI49M"
-                    title="YouTube video player" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/bbKL6tWI49M" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
             </div>
         </article>
-        
+
         <article class="articulo__tutorial">
             <div class="articulo__tutorial--texto">
                 <div>
@@ -77,8 +79,7 @@
                 </div>
             </div>
             <div class="articulo__tutorial--video">
-                <iframe  src="https://www.youtube.com/embed/bbKL6tWI49M"
-                    title="YouTube video player" frameborder="0"
+                <iframe src="https://www.youtube.com/embed/bbKL6tWI49M" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowfullscreen>
                 </iframe>
@@ -88,13 +89,13 @@
 
     <footer class="footer">
         <div class="footer__contacto">
-            <a class="contacto__titulo" href="contacto.html">Contacto:</a>
+            <a class="contacto__titulo link__hover" href="contacto.html">Contacto:</a>
             <ul>
                 <li class="contacto__item"><a href="mailto:correo@gmail.com" target="blank_"
-                        class="linksFooter">Envíanos un correo</a></li>
+                        class="linksFooter link__hover">Envíanos un correo</a></li>
                 <li class="contacto__item"><a
                         href="https://api.whatsapp.com/send?phone=0123456789&text=Hola, Nececito mas informacion!"
-                        target="blank_" class="linksFooter">Envíanos un mensaje de WhatsApp</a></li>
+                        target="blank_" class="linksFooter link__hover">Envíanos un mensaje de WhatsApp</a></li>
             </ul>
         </div>
         <a class="footer__logo" href="../index.html"><img src="../assets/img/logo.png" alt="Logo cuadros deco"
@@ -103,9 +104,9 @@
             <p>Seguinos en:</p>
             <ul class="redes__liks">
                 <li class="redes__link"><a href="https://www.facebook.com/cuadrosdecobahia/" target="blank_"
-                        class="linksFooter">Facebook</a></li>
+                        class="linksFooter link__hover">Facebook</a></li>
                 <li class="redes__link"><a href="https://www.instagram.com/cuadrosdecobahia/?hl=es" target="blank_"
-                        class="linksFooter">Instagram</a></li>
+                        class="linksFooter link__hover">Instagram</a></li>
             </ul>
         </div>
     </footer>

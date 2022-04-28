@@ -26,100 +26,72 @@
         </div>
         <nav class="header__nav">
             <ul class="nav__items">
-                <li class="nav__item"><a href="../index.html">Inicio</a></li>
-                <li class="nav__item"><a href="productos.html">Productos</a></li>
-                <li class="nav__item"><a href="contacto.html">Contacto</a></li>
-                <li class="nav__item"><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
-                <li class="nav__item"><a href="tutorial.html">Tutoriales de compra</a></li>
+                <li class="nav__item"><a href="../index.html" class="link__hover">Inicio</a></li>
+                <li class="nav__item"><a href="productos.html" class="link__hover">Productos</a></li>
+                <li class="nav__item"><a href="contacto.html" class="link__hover">Contacto</a></li>
+                <li class="nav__item"><a href="preguntas-frecuentes.html" class="link__hover">Preguntas frecuentes</a></li>
+                <li class="nav__item"><a href="tutorial.html" class="link__hover">Tutoriales de compra</a></li>
             </ul>
         </nav>
     </header>
-    
-    <!-- imagen principal (banner) -->
+
     <div class="banner__productos">
         <img src="../assets/img/leon.png" alt="Imagen principal de la pagina">
     </div>
-
-    <!-- contenido principal de la pagina: productos -->
-    <main> 
-        <section class="container-productos">
-            <div>
-                <h1>Productos</h1>    
-            </div>    
-            <div class="fila-productos"> <!-- fila 1 -->
-                <div class="producto"> <!-- producto 1 -->
-                    <div class="box-cuadro">
-                        <img src="../assets/img/productos/real madrid.svg" alt="" class="cuadro Real Madrid">
-                        <h2>Real Madrid</h2>
-                    </div>
-                </div>
-                <div class="producto"> <!-- producto 2 -->
-                    <div class="box-cuadro">
-                        <img src="../assets/img/productos/cuadro.svg" alt="" class="cuadro Portland">
-                        <h2>Portland</h2>
-                    </div>
-                </div>
-                <div class="producto"> <!-- producto 3 -->
-                    <div class="box-cuadro">
-                        <img src="../assets/img/productos/casla.svg" alt="" class="cuadro San Lorenzo">
-                        <h2>San Lorenzo</h2>
-                    </div>
-                </div>
-            </div>  
-            
-            <div class="fila-productos"> <!-- fila 2 -->
-                <div class="producto"> <!-- producto 1 -->
-                    <div class="box-cuadro">
-                        <img src="../assets/img/productos/river.jpg" alt="" class="cuadro River">
-                        <h2>River Plate</h2>
-                    </div>
-                </div>
-                <div class="producto"> <!-- producto 2 -->
-                    <div class="box-cuadro">
-                        <img src="../assets/img/productos/maradona.jpg" alt="" class="cuadro Maradona">
-                        <h2>Diego Maradona</h2>
-                    </div>
-                </div>
-                <div class="producto"> <!-- producto 3 -->
-                    <div class="box-cuadro">
-                        <img src="../assets/img/productos/palermo.jpg" alt="" class="cuadro Palermo">
-                        <h2>Martin Palermo</h2>
-                    </div>
-                </div>
+    
+    <main id="contenedor__grilla">
+        <section id="grilla__productos">
+            <!-- fila 1 -->
+            <div class="producto__contenedor">
+                <img src="../assets/img/productos/casla.svg" alt="" class="producto__item">
+                <h2>Producto</h2>
             </div>
-            
-            <div class="fila-productos"> <!-- fila 2 -->
-                <div class="producto"> <!-- producto 1 -->
-                    <div class="box-cuadro">
-                        <img src="../assets/img/productos/messi-jpg.jpg" alt="" class="cuadro Messi">
-                        <h2>Lionel Messi</h2>
-                    </div>
-                </div>
-                <div class="producto"> <!-- producto 2 -->
-                    <div class="box-cuadro">
-                        <img src="../assets/img/productos/harry.jpg" alt="" class="cuadro Harry Potter">
-                        <h2>Harry Potter</h2>
-                    </div>
-                </div>
-                <div class="producto"> <!-- producto 3 -->
-                    <div class="box-cuadro">
-                        <img src="../assets/img/productos/maradona fondo madera.jpg" alt="" class="cuadro Maradona">
-                        <h2>Diego Maradona</h2>
-                    </div>
-                </div>
+            <div class="producto__contenedor">
+                <img src="../assets/img/productos/gimnasia basquet.svg" alt="" class="producto__item">
+                <h2>Producto</h2>
+            </div>
+            <div class="producto__contenedor">
+                <img src="../assets/img/productos/real madrid.svg" alt="" class="producto__item">
+                <h2>Producto</h2>
+            </div>
+            <!-- fila 2 -->
+            <div class="producto__contenedor">
+                <img src="../assets/img/productos/maradona fondo madera.jpg" alt="" class="producto__item">
+                <h2>Producto</h2>
+            </div>
+            <div class="producto__contenedor">
+                <img src="../assets/img/productos/messi-jpg.jpg" alt="" class="producto__item">
+                <h2>Producto</h2>
+            </div>
+            <div class="producto__contenedor">
+                <img src="../assets/img/productos/maradona.jpg" alt="" class="producto__item">
+                <h2>Producto</h2>
+            </div>
+            <!-- fila 3 -->
+            <div class="producto__contenedor">
+                <img src="../assets/img/productos/palermo.jpg" alt="" class="producto__item">
+                <h2>Producto</h2>
+            </div>
+            <div class="producto__contenedor">
+                <img src="../assets/img/productos/harry.jpg" alt="" class="producto__item">
+                <h2>Producto</h2>
+            </div>
+            <div class="producto__contenedor">
+                <img src="../assets/img/productos/river.jpg" alt="" class="producto__item">
+                <h2>Producto</h2>
             </div>
         </section>
     </main>
 
     <footer class="footer">
         <div class="footer__contacto">
-            <a class="contacto__titulo" href="contacto.html">Contacto:</a>
+            <a class="contacto__titulo link__hover" href="contacto.html">Contacto:</a>
             <ul>
                 <li class="contacto__item"><a href="mailto:correo@gmail.com" target="blank_"
-                        class="linksFooter">Envíanos un correo</a></li>
+                        class="linksFooter link__hover">Envíanos un correo</a></li>
                 <li class="contacto__item"><a
                         href="https://api.whatsapp.com/send?phone=0123456789&text=Hola, Nececito mas informacion!"
-                        target="blank_" class="linksFooter">Envíanos un mensaje de WhatsApp</a></li>
+                        target="blank_" class="linksFooter link__hover">Envíanos un mensaje de WhatsApp</a></li>
             </ul>
         </div>
         <a class="footer__logo" href="../index.html"><img src="../assets/img/logo.png" alt="Logo cuadros deco"
@@ -128,9 +100,9 @@
             <p>Seguinos en:</p>
             <ul class="redes__liks">
                 <li class="redes__link"><a href="https://www.facebook.com/cuadrosdecobahia/" target="blank_"
-                        class="linksFooter">Facebook</a></li>
+                        class="linksFooter link__hover">Facebook</a></li>
                 <li class="redes__link"><a href="https://www.instagram.com/cuadrosdecobahia/?hl=es" target="blank_"
-                        class="linksFooter">Instagram</a></li>
+                        class="linksFooter link__hover">Instagram</a></li>
             </ul>
         </div>
     </footer>
