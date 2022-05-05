@@ -2,9 +2,10 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8">  
+    <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <link rel="icon" href="../assets/img/icono.ico">
     <link rel="stylesheet" href="../css/styles.css">
 
@@ -15,7 +16,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
-    
+
     <title>Cuadros Deco - Productos</title>
 </head>
 
@@ -24,61 +25,107 @@
         <div class="header__logo">
             <a href="../index.html"><img src="../assets/img/logo.png" alt="Cuadros Deco" class="header__img"></a>
         </div>
+        <label for="menu" class="header__label">
+            <img src="../assets/menu.png" alt="" class="header__menu">
+        </label>
+        <input type="checkbox" id="menu" class="header__input">
         <nav class="header__nav">
             <ul class="nav__items">
-                <li class="nav__item"><a href="../index.html" class="link__hover">Inicio</a></li>
-                <li class="nav__item"><a href="productos.html" class="link__hover">Productos</a></li>
-                <li class="nav__item"><a href="contacto.html" class="link__hover">Contacto</a></li>
-                <li class="nav__item"><a href="preguntas-frecuentes.html" class="link__hover">Preguntas frecuentes</a></li>
-                <li class="nav__item"><a href="tutorial.html" class="link__hover">Tutoriales de compra</a></li>
+                <li class="nav__item"><a href="../index.html">Inicio</a></li>
+                <li class="nav__item"><a href="productos.html">Productos</a></li>
+                <li class="nav__item"><a href="contacto.html">Contacto</a></li>
+                <li class="nav__item"><a href="preguntas-frecuentes.html">Preguntas frecuentes</a>
+                </li>
+                <!-- <li class="nav__item"><a href="tutorial.html" class="link__hover">Tutoriales de compra</a></li> -->
             </ul>
         </nav>
     </header>
 
     <div class="banner__productos">
-        <img src="../assets/img/leon.png" alt="Imagen principal de la pagina">
+        <img src="../assets/img/productos/Background.png" alt="">
+        <h1 class="titulo__banner">Nuestros productos</h1>
     </div>
-    
+
+    <div class="titulo__productos">
+        <h2>Cuadros personalizados:</h2>
+    </div>
+
     <main id="contenedor__grilla">
         <section id="grilla__productos">
             <!-- fila 1 -->
             <div class="producto__contenedor">
                 <img src="../assets/img/productos/casla.svg" alt="" class="producto__item">
-                <h2>Producto</h2>
+                <h3>Producto</h3>
+                <div>
+                    <p>Medidas: 50cm x 70cm</p>
+                    <p>Material: madera y pvc</p>
+                </div>
             </div>
             <div class="producto__contenedor">
                 <img src="../assets/img/productos/gimnasia basquet.svg" alt="" class="producto__item">
-                <h2>Producto</h2>
+                <h3>Producto</h3>
+                <div>
+                    <p>Medidas: 50cm x 70cm</p>
+                    <p>Material: madera y pvc</p>
+                </div>
             </div>
             <div class="producto__contenedor">
                 <img src="../assets/img/productos/real madrid.svg" alt="" class="producto__item">
-                <h2>Producto</h2>
+                <h3>Producto</h3>
+                <div>
+                    <p>Medidas: 50cm x 70cm</p>
+                    <p>Material: madera y pvc</p>
+                </div>
             </div>
             <!-- fila 2 -->
             <div class="producto__contenedor">
                 <img src="../assets/img/productos/maradona fondo madera.jpg" alt="" class="producto__item">
-                <h2>Producto</h2>
+                <h3>Producto</h3>
+                <div>
+                    <p>Medidas: 50cm x 70cm</p>
+                    <p>Material: madera y pvc</p>
+                </div>
             </div>
             <div class="producto__contenedor">
                 <img src="../assets/img/productos/messi-jpg.jpg" alt="" class="producto__item">
-                <h2>Producto</h2>
+                <h3>Producto</h3>
+                <div>
+                    <p>Medidas: 50cm x 70cm</p>
+                    <p>Material: madera y pvc</p>
+                </div>
             </div>
             <div class="producto__contenedor">
                 <img src="../assets/img/productos/maradona.jpg" alt="" class="producto__item">
-                <h2>Producto</h2>
+                <h3>Producto</h3>
+                <div>
+                    <p>Medidas: 50cm x 70cm</p>
+                    <p>Material: madera y pvc</p>
+                </div>
             </div>
             <!-- fila 3 -->
             <div class="producto__contenedor">
                 <img src="../assets/img/productos/palermo.jpg" alt="" class="producto__item">
-                <h2>Producto</h2>
+                <h3>Producto</h3>
+                <div>
+                    <p>Medidas: 50cm x 70cm</p>
+                    <p>Material: madera y pvc</p>
+                </div>
             </div>
             <div class="producto__contenedor">
                 <img src="../assets/img/productos/harry.jpg" alt="" class="producto__item">
-                <h2>Producto</h2>
+                <h3>Producto</h3>
+                <div>
+                    <p>Medidas: 50cm x 70cm</p>
+                    <p>Material: madera y pvc</p>
+                </div>
             </div>
-            <div class="producto__contenedor">
+            <div class="producto__contenedor producto__oculto" id="producto__ultimo">
                 <img src="../assets/img/productos/river.jpg" alt="" class="producto__item">
-                <h2>Producto</h2>
+                <h3>Producto</h3>
+                <div>
+                    <p>Medidas: 50cm x 70cm</p>
+                    <p>Medidas: 50cm x 70cm</p>
+                </div>
             </div>
         </section>
     </main>
@@ -91,7 +138,7 @@
                         class="linksFooter link__hover">Envíanos un correo</a></li>
                 <li class="contacto__item"><a
                         href="https://api.whatsapp.com/send?phone=0123456789&text=Hola, Nececito mas informacion!"
-                        target="blank_" class="linksFooter link__hover">Envíanos un mensaje de WhatsApp</a></li>
+                        target="blank_" class="linksFooter link__hover">Envíanos un WhatsApp</a></li>
             </ul>
         </div>
         <a class="footer__logo" href="../index.html"><img src="../assets/img/logo.png" alt="Logo cuadros deco"
