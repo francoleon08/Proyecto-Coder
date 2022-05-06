@@ -382,6 +382,10 @@ nav {
 }
 
 @media (max-width: 1024px) {
+    .banner__img {
+        background-image: url(../assets/img/index/banner3.svg);
+    }
+
     .main__index {
         width: 90%;
     }
@@ -538,7 +542,7 @@ nav {
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 850px) {
     .banner__productos img {
         width: 80%;
     }
@@ -557,13 +561,13 @@ nav {
     }
 }
 
-@media(max-width:540px) {
+@media(max-width:620px) {
     .banner__productos h1 {
         font-size: 3rem;
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 520px) {
     .banner__productos img {
         width: 85%;
     }
