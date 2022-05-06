@@ -20,24 +20,23 @@
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <a href="../index.html"><img src="../assets/img/logo.png" alt="Cuadros Deco" class="header__img"></a>
-        </div>
-        <label for="menu" class="header__label">
-            <img src="../assets/menu.png" alt="" class="header__menu">
-        </label>
-        <input type="checkbox" id="menu" class="header__input">
-        <nav class="header__nav">
-            <ul class="nav__items">
-                <li class="nav__item"><a href="../index.html">Inicio</a></li>
-                <li class="nav__item"><a href="productos.html">Productos</a></li>
-                <li class="nav__item"><a href="contacto.html">Contacto</a></li>
-                <li class="nav__item"><a href="preguntas-frecuentes.html">Preguntas frecuentes</a></li>
-                <!-- <li class="nav__item"><a href="tutorial.html" class="link__hover">Tutoriales de compra</a></li> -->
-            </ul>
-        </nav>
-    </header>
+    <header>
+	    <nav>
+	    	<div class="logo">
+  				<a href="../index.html"><img src="../assets/img/logo.png"></a>
+  			</div>
+		    <input type="checkbox" id="toggle" class="toggle">
+		    <label for="toggle" class="icon">
+		        	<span class="hamburguer"></span>
+		    </label>
+		    <ul class="menu">
+			        <li class="menu__item"><a href="../index.html" class="menu__link">Inicio</a></li>			        
+			        <li class="menu__item"><a href="../pages/productos.html" class="menu__link">Productos</a></li>
+			        <li class="menu__item"><a href="../pages/contacto.html" class="menu__link">Contacto</a></li>
+			        <li class="menu__item"><a href="../pages/preguntas-frecuentes.html" class="menu__link">FAQs</a></li>
+		    </ul>
+		</nav>
+  	</header>
 
     <!-- fila -->
     <section class="section__contacto">
