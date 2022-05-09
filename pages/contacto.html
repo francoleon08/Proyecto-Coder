@@ -40,50 +40,49 @@
 
     <!-- fila -->
     <section class="section__contacto">
-        <h1>Contacto:</h1>
+        <div class="section__titulo">
+            <h1 class="color__font">Contacto:</h1>
+        </div>
         <div class="contacto__contenedor">
             <!-- columna 1 -->
             <article class="contenedor__articulo">
-                <h2 class="contenedor__articulo--item">¡Estamos aqui para ayudarte!</h2> <!-- Subtitulo -->
-                <div class="contenedor__artiuculo--texto contenedor__articulo--item">
-                    <!-- texto -->
-                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ad reiciendis recusandae laboriosam? Voluptatum, vitae distinctio? Voluptates inventore cum, quis provident qui libero aliquid mollitia eos? Delectus dolores eaque fugiat.</p>
+                <div>
+                    <h2 class="color__font">¡Estamos aqui para ayudarte!</h2>
                 </div>
-                <div class="contenedor__articulo--img contenedor__articulo--item">
-                    <!-- imagen -->
-                    <img src="../assets/img/contacto/imagen simulada.jpg" alt="imagen de referencia para contacto">
+                <div>
+                    <p class="color__font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ad reiciendis recusandae laboriosam? Voluptatum, vitae distinctio? Voluptates inventore cum, quis provident qui libero aliquid mollitia eos? Delectus dolores eaque fugiat.</p>
+                    <p class="color__font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ad reiciendis recusandae laboriosam? Voluptatum, vitae distinctio? Voluptates inventore cum, quis provident qui libero aliquid mollitia eos? Delectus dolores eaque fugiat.</p>
                 </div>
             </article>
 
             <!-- columna 2 -->
-            <div class="contenedor__formulario">
-                <!-- Contacto -->
-                <form  action="POST" class="formulario">
-                    <h3 class="formulario__items">Envianos un mensaje</h3>
+            <div class="contenedor__formulario">  
+                <form  action="https://formspree.io/f/mrgjonje" method="POST" class="formulario">
+                    <h3 class="formulario__items color__font">Envianos un mensaje</h3>
                     <div class="formulario__items">
-                        <input type="text" class="formulario__item" name="nombre_apellido" placeholder="Nombre y apellido"
+                        <input type="text" class="formulario__item color__font" name="nombre_apellido" placeholder="Nombre y apellido"
                             required>
                     </div>
 
-                    <div class="formulario__items">
-                        <input type="email" class="formulario__item" type="email" name="mail" placeholder="Correo electrónico"
+                    <div class="formulario__items color__font">
+                        <input type="email" class="formulario__item color__font" type="email" name="mail" placeholder="Correo electrónico"
                             required>
                     </div>
 
-                    <div class="formulario__items">
-                        <input type="text" class="formulario__item" name="asunto" placeholder="Asunto" spellcheck="true">
+                    <div class="formulario__items color__font">
+                        <input type="text" class="formulario__item color__font" name="asunto" placeholder="Asunto" spellcheck="true">
                     </div>
 
-                    <div class="formulario__items">
-                        <textarea class="formulario__item--consulta" name="consulta" placeholder="Escriba su consulta aquí"  spellcheck="true"></textarea>
+                    <div class="formulario__items formulario_textArea color__font">
+                        <textarea class="formulario__item color__font" name="consulta" placeholder="Escriba su consulta aquí"  spellcheck="true"></textarea>
                     </div>
 
-                    <div class="formulario__items formulario__checkbox">
+                    <div class="formulario__items formulario__checkbox color__font">
                         <input type="checkbox" name="checkbox__newsletter" id="checkbox__newsletter" class="checkbox__item">
                         <label for="checkbox__newsletter" class="checkbox__item">Quiero suscribirme al newsletter</label>
                     </div>
 
-                    <div class="formulario__items">
+                    <div class="formulario__items color__font">
                         <input type="submit" class="formulario__item--boton link__hover" name="Enviar" value="Enviar consulta">
                     </div>
                 </form>
