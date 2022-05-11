@@ -546,27 +546,51 @@ nav {
 
 /* productos */
 .banner__productos {
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    background-image: linear-gradient(to bottom, #877c82, #c9c8d1);
+    display: flex;
+    background-image: url(../assets/img/productos/banner/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    flex-basis: 100%;
+    height: 100vh;
 }
 
-.banner__productos img {
-    width: 60%;
-    border-radius: .5rem;
+.banner__productos div {
+    background-color: rgba(0, 0, 0, 0.267);
 }
 
-.titulo__banner {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.603);
-    border-radius: .5rem;
-    padding: 5px;
+.banner__texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.banner__texto h1 {
     font-size: 3rem;
-    color: white;
+    padding-bottom: 2rem;
+    color: rgb(237, 230, 219);
+    text-align: center;
+}
+
+.banner__texto p {
+    font-size: 1.3rem;
+    text-align: center;
+    padding-bottom: 1rem;
+    color: rgb(237, 230, 219)
+}
+
+.productos__img {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: flex-end;
+}
+
+.productos__img img {
+    width: 100%;
+    display: block;
 }
 
 #contenedor__grilla {
@@ -625,14 +649,21 @@ nav {
     }
 }
 
-@media (max-width: 850px) {
-    .banner__productos img {
-        width: 80%;
+@media (max-width: 768px) {
+    .banner__productos {
+        background-image: url(../assets/img/productos/banner/banner\ productos\ mobil.jpg);
     }
 
-    .banner__productos h1 {
-        font-size: 2.4rem;
+    .banner__productos div {
+        background-color: rgba(0, 0, 0, 0.411);
     }
+
+    .productos__img {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
 
     #grilla__productos {
         grid-template-columns: repeat(2, 1fr);
@@ -648,20 +679,7 @@ nav {
     } */
 }
 
-@media(max-width:620px) {
-    .banner__productos h1 {
-        font-size: 3rem;
-    }
-}
-
 @media (max-width: 520px) {
-    .banner__productos img {
-        width: 85%;
-    }
-
-    .banner__productos h1 {
-        font-size: 1.16rem;
-    }
 
     .titulo__productos h2 {
         font-size: 1.5rem;
