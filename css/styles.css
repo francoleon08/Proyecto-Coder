@@ -304,8 +304,8 @@ nav {
 
 /* index */
 /* banner responsive */
-.banner__img {
-    background-image: url(../assets/img/index/banner.svg);
+.banner {
+    background-image: url(../assets/img/index/banner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -314,6 +314,22 @@ nav {
     justify-content: center;
     align-items: center;
     height: 100vh;
+}
+
+.banner__titulo {
+    font-size: 3rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner__titulo h1 {
+    color: rgb(237, 230, 219);
+    opacity: 0.7;
+    border-bottom: 2px solid;
 }
 
 .main__index {
@@ -382,10 +398,6 @@ nav {
 }
 
 @media (max-width: 1024px) {
-    .banner__img {
-        background-image: url(../assets/img/index/banner3.svg);
-    }
-
     .main__index {
         width: 90%;
     }
@@ -409,6 +421,14 @@ nav {
 }
 
 @media (max-width: 768px) {
+    .banner {
+        background-image: url(../assets/img/index/pexels-merve-bayar-10823878.jpg);
+    }
+
+    .banner__titulo {
+        font-size: 2.5rem;
+    }
+
     .main__index {
         width: 90%;
     }
@@ -441,7 +461,17 @@ nav {
     }
 }
 
+@media (max-width: 560px) {
+    .banner__titulo {
+        font-size: 2rem;
+    }
+}
+
 @media (max-width: 480px) {
+    .banner__titulo {
+        font-size: 1.5rem;
+    }
+
     .main__titulo {
         font-size: 2rem;
     }
@@ -465,6 +495,14 @@ nav {
 }
 
 @media (max-width: 320px) {
+    .banner__titulo {
+        text-align: center;
+    }
+
+    .banner__titulo h1 {
+        border-bottom: 0 solid;
+    }
+
     .main__titulo {
         font-size: 1.5rem;
     }
@@ -639,11 +677,19 @@ nav {
     font-size: 2.7rem;
 }
 
-.section__contacto h1,
+.section__titulo h1,
 .contacto__contenedor {
     padding: 1rem;
-    margin: 1rem 0;
     background-color: rgba(0, 0, 0, 0.473);
+    backdrop-filter: blur(2px);
+}
+
+.section__titulo {
+    margin-top: 1rem;
+}
+
+.contacto__contenedor {
+    margin: 1rem 0;
 }
 
 .contacto__contenedor {
@@ -683,6 +729,7 @@ nav {
     width: 80%;
     padding: .5rem;
     border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.473);
     font-family: 'Quicksand', 'Roboto', sans-serif;
     background-color: rgba(0, 0, 0, 0.473);
 }
@@ -715,8 +762,15 @@ nav {
 .formulario__item--boton {
     padding: 0.3rem 1rem;
     border-radius: 5px;
+    border: 1px solid transparent;
     font-family: 'Quicksand', 'Roboto', sans-serif;
     font-size: 1rem;
+    background-color: rgb(237, 230, 219);
+}
+
+.formulario__item--boton:active {
+    background-color: rgba(0, 0, 0, 0.274);
+    backdrop-filter: blur(.3px);
 }
 
 @media (max-width: 769px) {
@@ -755,7 +809,7 @@ nav {
 }
 
 /* FAQs */
-.section__faqs {
+/* .section__faqs {
     text-align: center;
     padding-top: 1rem;
 }
@@ -764,6 +818,12 @@ nav {
     border-radius: 1rem;
     width: 80%;
     box-shadow: 1rem 1rem 1rem rgb(221, 221, 221);
+}
+ */
+
+.section__carousel {
+    width: 90%;
+    margin: auto;
 }
 
 .main__faqs {
@@ -804,6 +864,11 @@ nav {
 }
 
 @media (max-width: 768px) {
+    .section__carousel {
+        width: 100%;
+    }
+    
+
     .main__faqs {
         width: 90%;
     }

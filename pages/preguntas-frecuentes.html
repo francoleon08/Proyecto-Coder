@@ -1,10 +1,23 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="../assets/img/icono.ico">
+
+    <!-- CSS only Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+
+    <!-- Reset por Bootstrap -->
+    <link rel="stylesheet" href="../css/reset-faqs.css">
+
     <link rel="stylesheet" href="../css/styles.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,30 +27,61 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
-    
+
     <title>Cuadros Deco - FAQs</title>
 </head>
+
 <body>
     <header>
-	    <nav>
-	    	<div class="logo">
-  				<a href="../index.html"><img src="../assets/img/logo.png" alt="logo principal"></a>
-  			</div>
-		    <input type="checkbox" id="toggle" class="toggle">
-		    <label for="toggle" class="icon">
-		        	<span class="hamburguer"></span>
-		    </label>
-		    <ul class="menu">
-			        <li class="menu__item"><a href="../index.html" class="menu__link">Inicio</a></li>			        
-			        <li class="menu__item"><a href="../pages/productos.html" class="menu__link">Productos</a></li>
-			        <li class="menu__item"><a href="../pages/contacto.html" class="menu__link">Contacto</a></li>
-			        <li class="menu__item"><a href="../pages/preguntas-frecuentes.html" class="menu__link">FAQs</a></li>
-		    </ul>
-		</nav>
-  	</header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html"><img src="../assets/img/logo.png" alt="logo principal"></a>
+            </div>
+            <input type="checkbox" id="toggle" class="toggle">
+            <label for="toggle" class="icon">
+                <span class="hamburguer"></span>
+            </label>
+            <ul class="menu">
+                <li class="menu__item"><a href="../index.html" class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="../pages/productos.html" class="menu__link">Productos</a></li>
+                <li class="menu__item"><a href="../pages/contacto.html" class="menu__link">Contacto</a></li>
+                <li class="menu__item"><a href="../pages/preguntas-frecuentes.html" class="menu__link">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section class="section__faqs">
-        <img src="../assets/img/faqs/home.jpg" alt="Imagen preguntas frecuentes">
+    <section class="section__carousel">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                    aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../assets/img/faqs/carousel/carousel (1).jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/faqs/carousel/carousel (2).jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="../assets/img/faqs/carousel/carousel (3).jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
     </section>
 
     <main class="main__faqs">
@@ -50,17 +94,19 @@
             </div>
             <div class="articulo__item">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa sed quod excepturi quas natus, beatae, dolorum hic quidem soluta aut tenetur, unde autem nam animi magni velit iure. Neque!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa sed quod excepturi quas
+                    natus, beatae, dolorum hic quidem soluta aut tenetur, unde autem nam animi magni velit iure. Neque!
                 </p>
             </div>
-        </article>        
+        </article>
         <article class="faqs__articulo">
             <div class="articulo__item articulo__item--titulo">
                 <h2>¿Como recibe su pedido?</h2>
             </div>
             <div class="articulo__item">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa sed quod excepturi quas natus, beatae, dolorum hic quidem soluta aut tenetur, unde autem nam animi magni velit iure. Neque!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa sed quod excepturi quas
+                    natus, beatae, dolorum hic quidem soluta aut tenetur, unde autem nam animi magni velit iure. Neque!
                 </p>
             </div>
         </article>
@@ -70,7 +116,8 @@
             </div>
             <div class="articulo__item">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa sed quod excepturi quas natus, beatae, dolorum hic quidem soluta aut tenetur, unde autem nam animi magni velit iure. Neque!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa sed quod excepturi quas
+                    natus, beatae, dolorum hic quidem soluta aut tenetur, unde autem nam animi magni velit iure. Neque!
                 </p>
             </div>
         </article>
@@ -80,14 +127,15 @@
             </div>
             <div class="articulo__item">
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa sed quod excepturi quas natus, beatae, dolorum hic quidem soluta aut tenetur, unde autem nam animi magni velit iure. Neque!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis ipsa sed quod excepturi quas
+                    natus, beatae, dolorum hic quidem soluta aut tenetur, unde autem nam animi magni velit iure. Neque!
                 </p>
             </div>
         </article>
         <div class="faqs__enlace">
             <a href="contacto.html" class="link__hover">¿Hablamos?</a>
         </div>
-    </main>    
+    </main>
 
     <footer class="footer">
         <div class="footer__contacto">
@@ -113,4 +161,5 @@
         </div>
     </footer>
 </body>
+
 </html>
