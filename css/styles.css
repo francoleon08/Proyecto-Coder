@@ -385,33 +385,33 @@ nav {
     flex-direction: row-reverse;
 }
 
- .main__boton {
+ .contenedor__boton {
     padding: 1rem;
 }
 
-.botonVerMas:hover,
-.botonVerMas:focus {
+.boton__animado:hover,
+.boton__animado:focus {
     box-shadow: inset 0 -3.25em 0 0 var(--hover);
 }
 
-.botonVerMas {
+.boton__animado {
     --color: rgb(29, 92, 99);
     --hover: rgb(65, 125, 122);
 }
 
-.botonVerMas {
+.boton__animado {
     color: var(--color);
     -webkit-transition: 0.25s;
     transition: 0.25s;
 }
 
-.botonVerMas:hover,
-.botonVerMas:focus {
+.boton__animado:hover,
+.boton__animado:focus {
     border-color: var(--hover);
     color: #fff;
 }
 
-.botonVerMas {
+.boton__animado {
     background-color: rgb(221, 221, 221);
     border-radius: .7rem;
     border: 2px solid rgb(29, 92, 99);
@@ -869,19 +869,8 @@ nav {
 .articulo__item p {
     text-align: justify;
 }
-
-.faqs__enlace {
+.boton__faqs {
     text-align: center;
-    padding-top: 1rem;
-}
-
-.faqs__enlace a {
-    /* idem a boton "ver mas" de index */
-    text-decoration: none;
-    font-size: x-large;
-    padding: 0.8rem;
-    border-radius: 0.7rem;
-    background-color: rgb(221, 221, 221);
 }
 
 @media (max-width: 1024px) {}
