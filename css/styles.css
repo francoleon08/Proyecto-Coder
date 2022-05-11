@@ -153,7 +153,7 @@ nav {
 
 .menu__link {
     text-decoration: none;
-    color: inherit;    
+    color: inherit;
 }
 
 .menu__item a {
@@ -385,16 +385,39 @@ nav {
     flex-direction: row-reverse;
 }
 
-.main__boton {
+ .main__boton {
     padding: 1rem;
 }
 
-.boton__link {
-    text-decoration: none;
-    font-size: x-large;
-    padding: 10px;
-    border-radius: 0.7rem;
+.botonVerMas:hover,
+.botonVerMas:focus {
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+.botonVerMas {
+    --color: rgb(29, 92, 99);
+    --hover: rgb(65, 125, 122);
+}
+
+.botonVerMas {
+    color: var(--color);
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.botonVerMas:hover,
+.botonVerMas:focus {
+    border-color: var(--hover);
+    color: #fff;
+}
+
+.botonVerMas {
     background-color: rgb(221, 221, 221);
+    border-radius: .7rem;
+    border: 2px solid rgb(29, 92, 99);
+    margin: 0.5em;
+    padding: 1em 2em;
+    text-decoration: none;
 }
 
 @media (max-width: 1024px) {
@@ -703,6 +726,7 @@ nav {
     width: 45%;
     text-align: center;
 }
+
 .contenedor__formulario {
     width: 55%;
     text-align: center;
@@ -787,6 +811,7 @@ nav {
     .contenedor__articulo {
         width: 100%;
     }
+
     .contenedor__formulario {
         width: 100%;
     }
@@ -859,15 +884,13 @@ nav {
     background-color: rgb(221, 221, 221);
 }
 
-@media (max-width: 1024px ) {
-    
-}
+@media (max-width: 1024px) {}
 
 @media (max-width: 768px) {
     .section__carousel {
         width: 100%;
     }
-    
+
 
     .main__faqs {
         width: 90%;
@@ -883,12 +906,12 @@ nav {
     }
 }
 
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
     .main__faqs--titulo h1 {
         font-size: 1.5rem;
     }
 
-    .articulo__item  h2{
+    .articulo__item h2 {
         font-size: 1rem;
     }
 }
