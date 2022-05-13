@@ -877,26 +877,13 @@ nav {
     margin: auto;
 }
 
-.main__faqs {
-    width: 80%;
-    margin: auto;
-    padding: 2rem 1rem;
-}
-
 .main__faqs--titulo {
     text-align: center;
     padding-bottom: 1rem;
 }
 
-.faqs__articulo {
-    padding: 1rem 0;
-}
-
-.articulo__item p {
-    text-align: justify;
-}
-.boton__faqs {
-    text-align: center;
+.accordion {
+    width: 80%;
 }
 
 @media (max-width: 1024px) {}
