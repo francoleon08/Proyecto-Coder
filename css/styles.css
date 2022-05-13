@@ -26,7 +26,8 @@ a {
 }
 
 h2,
-h3 {
+h3,
+span {
     color: rgb(29, 92, 99);
 }
 
@@ -609,7 +610,7 @@ nav {
 }
 
 #contenedor__grilla {
-    padding: 2rem;
+    padding: 2rem 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -629,7 +630,7 @@ nav {
 #grilla__productos {
     display: grid;
     grid-gap: 2.5rem;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(3, 1fr);
     align-items: center;
     padding: 1rem;
@@ -637,20 +638,29 @@ nav {
 
 .producto__contenedor {
     text-align: center;
+    border: 1px solid rgb(29, 92, 99); 
+    border-radius: 0.7rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(221, 221, 221);
     transition: transform .2s;
 }
 
+.producto__contenedor div {
+    padding-bottom: 4px;
+}
+
 .producto__item {
-    border-radius: 0.7rem;
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
     width: 250px;
     height: 300px;
     object-fit: cover;
     filter: brightness(80%);
-    box-shadow: 0.5rem 0.5rem 0.5rem rgb(221, 221, 221);
+    border-bottom: 1px solid rgb(29, 92, 99);
 }
 
 .producto__precio {
     font-weight: bold;
+    font-size: 20px;
 }
 
 .producto__item:hover {
@@ -658,7 +668,14 @@ nav {
 }
 
 .producto__contenedor:hover {
-    transform: scale(120%);
+    transform: scale(110%);
+}
+
+@media (max-width: 1200px) {
+    #grilla__productos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
 }
 
 @media (max-width: 768px) {
