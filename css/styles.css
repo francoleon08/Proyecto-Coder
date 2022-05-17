@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: #FEFBE7;
+}
+
 /* CLASES GENERALES */
 h1,
 h2,
@@ -47,6 +51,15 @@ a {
 /* CLASES GENERALES */
 
 /* Header (Responsive) */
+
+header {
+    overflow: hidden;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    z-index: 999;
+}
+
 :root {
     --ancho: 1.5em;
     --alto: calc(var(--ancho) / 5);
@@ -321,7 +334,7 @@ nav {
 /* index */
 /* banner responsive */
 .banner {
-    background-image: url(../assets/img/index/banner.jpg);
+    background-image: url(../assets/img/index/banner-index\ \(desktop\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -461,7 +474,7 @@ nav {
 
 @media (max-width: 768px) {
     .banner {
-        background-image: url(../assets/img/index/pexels-merve-bayar-10823878.jpg);
+        background-image: url(../assets/img/index/banner-index\ \(mobile\).jpg);
     }
 
     .banner__titulo {
@@ -728,13 +741,9 @@ nav {
     background-position: center center;
     flex-basis: 100%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.section__contacto {
-    display: flex;
-    flex-direction: column;
 }
 
 .section__titulo {
@@ -751,7 +760,7 @@ nav {
 }
 
 .section__titulo {
-    margin-top: 1rem;
+    margin-top: 5rem;
 }
 
 .contacto__contenedor {
@@ -841,6 +850,10 @@ nav {
 }
 
 @media (max-width: 769px) {
+    .section__titulo {
+        margin-top: 6.5rem;
+    }
+
     .section__contacto {
         background-image: url('../assets/img/contacto/contacto\ mobile.jpg');
     }
