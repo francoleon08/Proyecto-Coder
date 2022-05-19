@@ -15,28 +15,28 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
-    
+
     <title>Cuadros Deco - Contacto</title>
 </head>
 
 <body>
     <header>
-	    <nav>
-	    	<div class="logo">
-  				<a href="../index.html"><img src="../assets/img/logo.png" alt="logo principal"></a>
-  			</div>
-		    <input type="checkbox" id="toggle" class="toggle">
-		    <label for="toggle" class="icon">
-		        	<span class="hamburguer"></span>
-		    </label>
-		    <ul class="menu">
-			        <li class="menu__item"><a href="../index.html" class="menu__link">Inicio</a></li>			        
-			        <li class="menu__item"><a href="../pages/productos.html" class="menu__link">Productos</a></li>
-			        <li class="menu__item"><a href="../pages/contacto.html" class="menu__link">Contacto</a></li>
-			        <li class="menu__item"><a href="../pages/preguntas-frecuentes.html" class="menu__link">FAQs</a></li>
-		    </ul>
-		</nav>
-  	</header>
+        <nav>
+            <div class="logo">
+                <a href="../index.html"><img src="../assets/img/logo.png" alt="logo principal"></a>
+            </div>
+            <input type="checkbox" id="toggle" class="toggle">
+            <label for="toggle" class="icon">
+                <span class="hamburguer"></span>
+            </label>
+            <ul class="menu">
+                <li class="menu__item"><a href="../index.html" class="menu__link">Inicio</a></li>
+                <li class="menu__item"><a href="../pages/productos.html" class="menu__link">Productos</a></li>
+                <li class="menu__item"><a href="../pages/contacto.html" class="menu__link">Contacto</a></li>
+                <li class="menu__item"><a href="../pages/preguntas-frecuentes.html" class="menu__link">FAQs</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <!-- fila -->
     <section class="section__contacto">
@@ -50,40 +50,60 @@
                     <h2 class="color__font">¡Estamos aqui para ayudarte!</h2>
                 </div>
                 <div>
-                    <p class="color__font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ad reiciendis recusandae laboriosam? Voluptatum, vitae distinctio? Voluptates inventore cum, quis provident qui libero aliquid mollitia eos? Delectus dolores eaque fugiat.</p>
-                    <p class="color__font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ad reiciendis recusandae laboriosam? Voluptatum, vitae distinctio? Voluptates inventore cum, quis provident qui libero aliquid mollitia eos? Delectus dolores eaque fugiat.</p>
+                    <p class="color__font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ad reiciendis
+                        recusandae laboriosam? Voluptatum, vitae distinctio? Voluptates inventore cum, quis provident
+                        qui libero aliquid mollitia eos? Delectus dolores eaque fugiat.</p>
+                    <p class="color__font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet ad reiciendis
+                        recusandae laboriosam? Voluptatum, vitae distinctio? Voluptates inventore cum, quis provident
+                        qui libero aliquid mollitia eos? Delectus dolores eaque fugiat.</p>
                 </div>
             </article>
 
             <!-- columna 2 -->
-            <div class="contenedor__formulario">  
-                <form  action="https://formspree.io/f/mrgjonje" method="POST" class="formulario">
+            <div class="contenedor__formulario">
+                <form action="https://formspree.io/f/mrgjonje" method="POST" class="formulario">
                     <h3 class="formulario__items color__font">Envianos un mensaje</h3>
                     <div class="formulario__items">
-                        <input type="text" class="formulario__item color__font" name="nombre_apellido" placeholder="Nombre y apellido"
-                            required>
+                        <input type="text" class="formulario__item color__font" name="nombre_apellido"
+                            placeholder="Nombre y apellido" required>
                     </div>
 
                     <div class="formulario__items color__font">
-                        <input type="email" class="formulario__item color__font" type="email" name="mail" placeholder="Correo electrónico"
-                            required>
+                        <input type="email" class="formulario__item color__font" type="email" name="mail"
+                            placeholder="Correo electrónico" required>
                     </div>
 
                     <div class="formulario__items color__font">
-                        <input type="text" class="formulario__item color__font" name="asunto" placeholder="Asunto" spellcheck="true">
+                        <input type="text" class="formulario__item color__font" name="asunto" placeholder="Asunto"
+                            spellcheck="true">
                     </div>
 
                     <div class="formulario__items formulario_textArea color__font">
-                        <textarea class="formulario__item color__font" name="consulta" placeholder="Escriba su consulta aquí"  spellcheck="true"></textarea>
+                        <textarea class="formulario__item color__font" name="consulta"
+                            placeholder="Escriba su consulta aquí" spellcheck="true"></textarea>
                     </div>
 
                     <div class="formulario__items formulario__checkbox color__font">
-                        <input type="checkbox" name="checkbox__newsletter" id="checkbox__newsletter" class="checkbox__item">
-                        <label for="checkbox__newsletter" class="checkbox__item">Quiero suscribirme al newsletter</label>
+                        <input type="checkbox" name="checkbox__newsletter" id="checkbox__newsletter"
+                            class="checkbox__item">
+                        <label for="checkbox__newsletter" class="checkbox__item">Quiero suscribirme al
+                            newsletter</label>
                     </div>
 
-                    <div class="formulario__items color__font">
-                        <input type="submit" class="formulario__item--boton link__hover" name="Enviar" value="Enviar consulta">
+                    <div class="formulario__item--boton">
+                        <button class="boton__contacto">
+                            <div class="svg-wrapper-1">
+                                <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                        <path fill="none" d="M0 0h24v24H0z"></path>
+                                        <path fill="currentColor"
+                                            d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z">
+                                        </path>
+                                    </svg>
+                                </div>
+                            </div>
+                            <span>Enviar</span>
+                        </button>
                     </div>
                 </form>
             </div>
@@ -113,7 +133,7 @@
             </ul>
         </div>
     </footer>
-    
+
     <div class="copyright">
         <span>© Copyright 2022 Franco León - Todos los Derechos Reservados</span>
     </div>

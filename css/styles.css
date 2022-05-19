@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #FEFBE7;
+    background-color: rgb(254, 251, 231);
 }
 
 /* CLASES GENERALES */
@@ -52,9 +52,12 @@ a {
 
 header {
     overflow: hidden;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
     z-index: 999;
 }
 
@@ -422,7 +425,7 @@ nav {
     flex-direction: row-reverse;
 }
 
- .contenedor__boton {
+.contenedor__boton {
     padding: 1rem;
 }
 
@@ -621,7 +624,7 @@ nav {
 .productos__img {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: flex-end;
 }
 
@@ -659,7 +662,7 @@ nav {
 
 .producto__contenedor {
     text-align: center;
-    border: 1px solid rgb(29, 92, 99); 
+    border: 1px solid rgb(29, 92, 99);
     border-radius: 0.7rem;
     box-shadow: 0.5rem 0.5rem 0.5rem rgb(221, 221, 221);
     transition: transform .2s;
@@ -710,6 +713,14 @@ nav {
 
     .productos__img {
         display: none;
+    }
+
+    .producto__item {
+        filter: brightness(100%);
+    }
+
+    .producto__contenedor:hover {
+        transform: scale(100%);
     }
 }
 
@@ -844,17 +855,62 @@ nav {
 }
 
 .formulario__item--boton {
-    padding: 0.3rem 1rem;
-    border-radius: 5px;
-    border: 1px solid transparent;
-    font-family: 'Quicksand', 'Roboto', sans-serif;
-    font-size: 1rem;
-    background-color: rgb(237, 230, 219);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.formulario__item--boton:active {
-    background-color: rgba(0, 0, 0, 0.274);
-    backdrop-filter: blur(.3px);
+.boton__contacto {
+    font-family: inherit;
+    font-size: 20px;
+    background-color: rgb(254, 251, 231);
+    color: rgb(29, 92, 99);
+    padding: 0.3rem 1rem;
+    padding-left: 0.9rem;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: .7rem;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.boton__contacto span {
+    display: block;
+    margin-left: 0.3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.boton__contacto svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.boton__contacto:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.boton__contacto:hover svg {
+    transform: translateX(1.2rem) rotate(45deg) scale(1.1);
+}
+
+.boton__contacto:hover span {
+    transform: translateX(5rem);
+}
+
+.boton__contacto:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
 }
 
 @media (max-width: 769px) {
