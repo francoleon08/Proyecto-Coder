@@ -695,6 +695,66 @@ nav {
     transform: scale(102%);
 }
 
+/* From uiverse.io by @mateusneves */
+.boton__producto {
+    position: relative;
+    font-size: 12px;
+    letter-spacing: 1px;
+    height: 3em;
+    padding: 0 3em;
+    margin-bottom: 5px;
+    border: none;
+    background-color: #198754;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton__producto::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    background: #198754;
+    transition: 0.2s;
+}
+
+.boton__producto .label {
+    position: relative;
+}
+
+.boton__producto .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: 3em;
+    right: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.boton__producto span {
+    color: white;
+}
+
+.boton__producto:hover::before {
+    height: 100%;
+}
+
+.boton__producto:hover .icon {
+    top: 0;
+    opacity: 1;
+}
+
 @media (max-width: 1200px) {
     #grilla__productos {
         grid-template-columns: repeat(3, 1fr);
@@ -745,10 +805,6 @@ nav {
     #grilla__productos {
         grid-template-columns: 1fr;
         grid-template-rows: repeat(auto, 1fr);
-    }
-
-    .producto__oculto {
-        display: block;
     }
 }
 
