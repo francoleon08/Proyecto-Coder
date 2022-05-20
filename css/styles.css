@@ -511,7 +511,9 @@ nav {
     background-image: url(../assets/img/index/banner-index-mobile.jpg);
   }
   .banner__titulo a {
-    font-size: 3rem;
+    width: 80%;
+    text-align: center;
+    border: 0px;
   }
   .banner__titulo a:before,
   .banner__titulo a:after {
@@ -544,15 +546,9 @@ nav {
   }
 }
 
-@media (max-width: 580px) {
+@media (max-width: 490px) {
   .banner__titulo a {
-    font-size: 2.5rem;
-  }
-}
-
-@media (max-width: 480px) {
-  .banner__titulo a {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .main__titulo {
     font-size: 2rem;
@@ -575,14 +571,8 @@ nav {
 @media (max-width: 360px) {
   .banner__titulo a:before,
   .banner__titulo a:after {
-    padding: 2.3rem 1rem;
+    padding: 3.5rem .7rem;
     border: 7px solid #1b3d41;
-  }
-  .banner__titulo {
-    text-align: center;
-  }
-  .banner__titulo a {
-    border-bottom: 0 solid;
   }
   .main__titulo {
     font-size: 1.5rem;
