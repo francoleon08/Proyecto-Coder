@@ -1,18 +1,12 @@
-@charset "UTF-8";
-/* line 1, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/reset-faqs.scss */
 ol, ul {
   padding-left: 0;
 }
 
-/* line 5, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/reset-faqs.scss */
 dl, ol, ul {
   margin: 0;
 }
 
-/* line 9, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/reset-faqs.scss */
 p {
   margin-top: 0;
   margin-bottom: 0;
 }
-
-/*# sourceMappingURL=reset-faqs.css.map */

@@ -20,13 +20,15 @@
 }
 
 .articulo__texto {
-    background-color: #DAE5D0;
-}
-
-.articulo__texto h2,
-.articulo__texto p {
-    padding: 1rem;
-    text-align: justify;
+    background-color: rgb(218, 229, 208);
+    h2 {
+        padding-top: 1rem;
+        text-align: justify;
+    }
+    p {
+        padding: 1rem;
+        text-align: justify;
+    }
 }
 
 .articulo__item {

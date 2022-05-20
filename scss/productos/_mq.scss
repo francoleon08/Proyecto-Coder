@@ -8,10 +8,9 @@
 @media (max-width: 768px) {
     .banner__productos {
         background-image: url(../assets/img/productos/banner/banner-productos-mobil.jpg);
-    }
-
-    .banner__productos div {
-        background-color: rgba(0, 0, 0, 0.411);
+        div {
+            background-color: rgba(0, 0, 0, 0.411);
+        }
     }
 
     .productos__img {

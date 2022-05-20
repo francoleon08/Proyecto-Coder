@@ -6,10 +6,9 @@
     background-position: center center;
     flex-basis: 100%;
     height: 100vh;
-}
-
-.banner__productos div {
-    background-color: rgba(0, 0, 0, 0.267);
+    div {
+        background-color: rgba(0, 0, 0, 0.267);
+    }
 }
 
 .banner__texto {
@@ -18,20 +17,18 @@
     justify-content: center;
     align-items: center;
     padding: 0 2rem;
-}
-
-.banner__texto h1 {
-    font-size: 3rem;
-    padding-bottom: 2rem;
-    color: rgb(237, 230, 219);
-    text-align: center;
-}
-
-.banner__texto p {
-    font-size: 1.3rem;
-    text-align: center;
-    padding-bottom: 1rem;
-    color: rgb(237, 230, 219)
+    h1 {
+        font-size: 3rem;
+        padding-bottom: 2rem;
+        color: rgb(237, 230, 219);
+        text-align: center;
+    }
+    p {
+        font-size: 1.3rem;
+        text-align: center;
+        padding-bottom: 1rem;
+        color: rgb(237, 230, 219)
+    }
 }
 
 .productos__img {
@@ -39,9 +36,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
-}
-
-.productos__img img {
-    width: 100%;
-    display: block;
+    img {
+        width: 100%;
+        display: block;
+    }
 }

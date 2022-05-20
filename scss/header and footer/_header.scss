@@ -1,13 +1,9 @@
 /* Header (Responsive) */
-
 header {
     overflow: hidden;
     position: fixed;
-    /* Set the navbar to fixed position */
     top: 0;
-    /* Position the navbar at the top of the page */
     width: 100%;
-    /* Full width */
     z-index: 999;
 }
 
@@ -116,17 +112,16 @@ nav {
 .menu__item {
     list-style: none;
     padding: 0 1rem;
+    a {
+        color: rgb(26, 60, 64);
+        text-decoration: none;
+        --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+    }
 }
 
 .menu__link {
     text-decoration: none;
     color: inherit;
-}
-
-.menu__item a {
-    color: rgb(26, 60, 64);
-    text-decoration: none;
-    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 
 .menu__item a::after {

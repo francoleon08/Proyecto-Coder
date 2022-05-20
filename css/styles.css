@@ -1,19 +1,15 @@
-@charset "UTF-8";
 /* reset */
-/* line 2, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/all/_all.scss */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* line 8, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/all/_all.scss */
 body {
   background-color: #fefbe7;
 }
 
 /* CLASES GENERALES */
-/* line 13, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/all/_all.scss */
 h1,
 h2,
 h3,
@@ -27,49 +23,39 @@ span {
   font-family: 'Quicksand', 'Roboto', sans-serif;
 }
 
-/* line 26, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/all/_all.scss */
 h1,
 a {
   color: #1a3c40;
 }
 
-/* line 31, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/all/_all.scss */
 h2,
 h3,
 span {
   color: #1d5c63;
 }
 
-/* line 37, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/all/_all.scss */
 p {
   color: #417d7a;
 }
 
 /* clase general para todos los links */
-/* line 42, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/all/_all.scss */
 .link__hover:hover {
   color: gray;
 }
 
-/* line 46, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/all/_all.scss */
 a {
   font-weight: bold;
 }
 
 /* Header (Responsive) */
-/* line 3, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 header {
   overflow: hidden;
   position: fixed;
-  /* Set the navbar to fixed position */
   top: 0;
-  /* Position the navbar at the top of the page */
   width: 100%;
-  /* Full width */
   z-index: 999;
 }
 
-/* line 14, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 :root {
   --ancho: 1.5em;
   --alto: calc(var(--ancho) / 5);
@@ -85,7 +71,6 @@ header {
   --main: darkturquoise;
 }
 
-/* line 29, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 .icon {
   display: none;
   width: var(--ancho);
@@ -94,12 +79,10 @@ header {
   position: relative;
 }
 
-/* line 37, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 .toggle {
   display: none;
 }
 
-/* line 41, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 .hamburguer {
   display: block;
   width: var(--ancho);
@@ -110,7 +93,6 @@ header {
   transition: all .3s ease-in-out;
 }
 
-/* line 51, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 .hamburguer:before,
 .hamburguer:after {
   content: "";
@@ -123,32 +105,27 @@ header {
   transition: inherit;
 }
 
-/* line 63, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 .hamburguer:after {
   top: var(--abajo);
 }
 
-/* line 67, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 .toggle:checked + .icon > .hamburguer {
   background: var(--close);
   transform: rotate(45deg);
 }
 
-/* line 72, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 .toggle:checked + .icon > .hamburguer:before {
   background: var(--close);
   top: 0;
   transform: rotate(90deg);
 }
 
-/* line 78, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 .toggle:checked + .icon > .hamburguer:after {
   background: var(--close);
   top: 0;
   transform: rotate(90deg);
 }
 
-/* line 84, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 nav {
   width: 100%;
   background-color: #F9EBC8;
@@ -162,20 +139,17 @@ nav {
   position: relative;
 }
 
-/* line 97, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 .logo a img {
   width: 60px;
   height: auto;
   padding: 5px;
 }
 
-/* line 103, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 .menu-title {
   display: none;
   text-align: center;
 }
 
-/* line 108, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 .menu {
   text-align: center;
   width: 50%;
@@ -184,26 +158,22 @@ nav {
   justify-content: flex-end;
 }
 
-/* line 116, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 .menu__item {
   list-style: none;
   padding: 0 1rem;
 }
 
-/* line 121, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
-.menu__link {
-  text-decoration: none;
-  color: inherit;
-}
-
-/* line 126, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 .menu__item a {
   color: #1a3c40;
   text-decoration: none;
   --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
 }
 
-/* line 132, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
+.menu__link {
+  text-decoration: none;
+  color: inherit;
+}
+
 .menu__item a::after {
   content: "";
   display: block;
@@ -215,54 +185,44 @@ nav {
   transition: clip-path .4s;
 }
 
-/* line 143, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 .menu__item a:hover {
   --clippy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
 }
 
-/* line 147, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
 .logo a img:hover {
   opacity: 90%;
 }
 
 @media only screen and (max-width: 768px) {
-  /* line 152, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
   .icon {
     display: inline-block;
   }
-  /* line 156, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
   nav {
     padding: 0 .3rem;
   }
-  /* line 160, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
   .menu {
     display: none;
     width: 100%;
   }
-  /* line 165, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
   .menu__item {
     width: 100%;
   }
-  /* line 169, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
   .menu,
   .menu__link {
     width: 100%;
   }
-  /* line 174, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
   .toggle:checked ~ .menu {
     display: block;
   }
 }
 
 @media (max-width: 480px) {
-  /* line 180, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_header.scss */
   .logo a img {
     width: 48px;
   }
 }
 
 /* footer grid */
-/* line 2, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
 .footer {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
@@ -272,7 +232,6 @@ nav {
   padding: 0.3rem 0;
 }
 
-/* line 11, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
 .footer__contacto,
 .footer__logo,
 .footer__redes {
@@ -281,50 +240,41 @@ nav {
   align-items: center;
 }
 
-/* line 19, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
 .footer__contacto a {
   text-decoration: none;
   padding-left: 1rem;
   color: #417d7a;
 }
 
-/* line 25, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
-.contacto__item a {
-  color: #1a3c40;
-}
-
-/* line 29, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
 .contacto__item {
   list-style: none;
 }
 
-/* line 33, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
+.contacto__item a {
+  color: #1a3c40;
+}
+
 .contacto__titulo {
   text-decoration-style: none;
 }
 
-/* line 37, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
 .footer__logo img {
   width: 20%;
 }
 
-/* line 41, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
 .footer__logo--img:hover {
   opacity: 90%;
 }
 
-/* line 45, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
 .redes__link {
   display: inline;
 }
 
-/* line 49, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
 .redes__link a {
   text-decoration: none;
   margin-left: 1rem;
 }
 
-/* line 54, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
 .copyright {
   padding: 4px;
   text-align: center;
@@ -334,50 +284,40 @@ nav {
 }
 
 @media (max-width: 1024px) {
-  /* line 63, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
   .header__img {
     width: 18%;
   }
-  /* line 67, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
   .footer__logo img {
     width: 25%;
   }
 }
 
 @media (max-width: 768px) {
-  /* line 73, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
   .footer {
     grid-template-columns: 1fr 1fr;
   }
-  /* line 77, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
   .footer__contacto,
   .footer__redes {
     flex-direction: column;
   }
-  /* line 82, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
   .footer__logo {
     display: none;
   }
-  /* line 86, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
   .redes__link {
     display: block;
   }
-  /* line 90, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
   .redes__link a {
     margin: 0;
   }
-  /* line 94, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
   .copyright {
     font-size: .8rem;
   }
 }
 
 @media (max-width: 480px) {
-  /* line 100, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
   .header__img {
     width: 25%;
   }
-  /* line 104, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/header and footer/_footer.scss */
   .footer {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr;
@@ -386,7 +326,6 @@ nav {
 }
 
 /* Index */
-/* line 1, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_banner.scss */
 .banner {
   background-image: url(../assets/img/index/banner-index-desktop.jpg);
   background-repeat: no-repeat;
@@ -399,7 +338,6 @@ nav {
   height: 100vh;
 }
 
-/* line 13, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_banner.scss */
 .banner__titulo {
   font-size: 3rem;
   background-color: rgba(0, 0, 0, 0.5);
@@ -410,14 +348,12 @@ nav {
   align-items: center;
 }
 
-/* line 23, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_banner.scss */
 .banner__titulo h1 {
   color: #ede6db;
   opacity: 0.7;
   border-bottom: 2px solid;
 }
 
-/* line 1, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_main.scss */
 .main__index {
   text-align: center;
   margin: auto;
@@ -425,43 +361,40 @@ nav {
   width: 80%;
 }
 
-/* line 8, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_main.scss */
 .main__titulo {
   font-size: 5rem;
   border-top: solid 1px;
 }
 
-/* line 13, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_main.scss */
 .main__subtitulo {
   font-size: 2rem;
 }
 
-/* line 17, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_main.scss */
 .main__articulo {
   display: flex;
   padding: 1rem 0;
 }
 
-/* line 22, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_main.scss */
 .articulo__texto {
-  background-color: #DAE5D0;
+  background-color: #dae5d0;
 }
 
-/* line 26, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_main.scss */
-.articulo__texto h2,
+.articulo__texto h2 {
+  padding-top: 1rem;
+  text-align: justify;
+}
+
 .articulo__texto p {
   padding: 1rem;
   text-align: justify;
 }
 
-/* line 32, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_main.scss */
 .articulo__item {
   padding: 0 1.5rem;
   margin: auto;
   border-radius: 0.7rem;
 }
 
-/* line 38, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_main.scss */
 .articulo__img {
   max-width: 300px;
   max-height: 300px;
@@ -470,48 +403,40 @@ nav {
   filter: brightness(95%);
 }
 
-/* line 46, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_main.scss */
 .articulo__img:hover {
   filter: brightness(100%);
 }
 
-/* line 50, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_main.scss */
 .articulo__invertido {
   flex-direction: row-reverse;
 }
 
-/* line 1, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_boton-animado.scss */
 .contenedor__boton {
   padding: 1rem;
 }
 
-/* line 5, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_boton-animado.scss */
 .boton__animado:hover,
 .boton__animado:focus {
   box-shadow: inset 0 -3.25em 0 0 var(--hover);
 }
 
-/* line 10, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_boton-animado.scss */
 .boton__animado {
   --color: rgb(29, 92, 99);
   --hover: rgb(65, 125, 122);
 }
 
-/* line 15, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_boton-animado.scss */
 .boton__animado {
   color: var(--color);
   -webkit-transition: 0.25s;
   transition: 0.25s;
 }
 
-/* line 21, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_boton-animado.scss */
 .boton__animado:hover,
 .boton__animado:focus {
   border-color: var(--hover);
   color: #fff;
 }
 
-/* line 27, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_boton-animado.scss */
 .boton__animado {
   background-color: #dddddd;
   border-radius: .7rem;
@@ -522,23 +447,18 @@ nav {
 }
 
 @media (max-width: 1024px) {
-  /* line 2, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .main__index {
     width: 90%;
   }
-  /* line 6, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .main__index h2 {
     font-size: 1.2rem;
   }
-  /* line 10, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .main__articulo {
     flex-direction: column;
   }
-  /* line 14, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .articulo__texto {
     margin-bottom: 2rem;
   }
-  /* line 18, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .articulo__img {
     max-width: 400px;
     max-height: 400px;
@@ -546,112 +466,90 @@ nav {
 }
 
 @media (max-width: 768px) {
-  /* line 25, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .banner {
     background-image: url(../assets/img/index/banner-index-mobile.jpg);
   }
-  /* line 29, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .banner__titulo {
     font-size: 2.5rem;
   }
-  /* line 33, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .main__index {
     width: 90%;
   }
-  /* line 37, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .main__titulo {
     font-size: 3rem;
     border-top: solid 1px;
   }
-  /* line 42, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .main__subtitulo {
     font-size: 2rem;
   }
-  /* line 46, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .main__articulo {
     flex-direction: column;
   }
-  /* line 50, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .articulo__texto {
     margin-bottom: 2rem;
   }
-  /* line 54, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
-  .articulo__img {
-    max-width: 300px;
-    max-height: 300px;
-  }
-  /* line 59, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .articulo__texto h2,
   .articulo__texto p {
     text-align: center;
   }
+  .articulo__img {
+    max-width: 300px;
+    max-height: 300px;
+    filter: brightness(100%);
+  }
 }
 
 @media (max-width: 560px) {
-  /* line 66, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .banner__titulo {
     font-size: 2rem;
   }
 }
 
 @media (max-width: 480px) {
-  /* line 72, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .banner__titulo {
     font-size: 1.5rem;
   }
-  /* line 76, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .main__titulo {
     font-size: 2rem;
   }
-  /* line 80, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
-  .main__index h2 {
-    font-size: 1rem;
-  }
-  /* line 84, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .main__index {
     width: 95%;
   }
-  /* line 88, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
+  .main__index h2 {
+    font-size: 1rem;
+  }
   .articulo__img {
     max-width: 250px;
     max-height: 250px;
   }
-  /* line 93, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .boton__link {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 320px) {
-  /* line 99, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .banner__titulo {
     text-align: center;
   }
-  /* line 103, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .banner__titulo h1 {
     border-bottom: 0 solid;
   }
-  /* line 107, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .main__titulo {
     font-size: 1.5rem;
   }
-  /* line 111, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .main__index {
     width: 95%;
   }
-  /* line 115, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .articulo__img {
     max-width: 200px;
     max-height: 200px;
   }
-  /* line 120, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/index/_mq.scss */
   .boton__link {
     font-size: 0.7rem;
   }
 }
 
 /* Productos */
-/* line 1, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_banner.scss */
 .banner__productos {
   display: flex;
   background-image: url(../assets/img/productos/banner/background.jpg);
@@ -662,12 +560,10 @@ nav {
   height: 100vh;
 }
 
-/* line 11, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_banner.scss */
 .banner__productos div {
   background-color: rgba(0, 0, 0, 0.267);
 }
 
-/* line 15, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_banner.scss */
 .banner__texto {
   display: flex;
   flex-direction: column;
@@ -676,7 +572,6 @@ nav {
   padding: 0 2rem;
 }
 
-/* line 23, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_banner.scss */
 .banner__texto h1 {
   font-size: 3rem;
   padding-bottom: 2rem;
@@ -684,7 +579,6 @@ nav {
   text-align: center;
 }
 
-/* line 30, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_banner.scss */
 .banner__texto p {
   font-size: 1.3rem;
   text-align: center;
@@ -692,7 +586,6 @@ nav {
   color: #ede6db;
 }
 
-/* line 37, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_banner.scss */
 .productos__img {
   display: flex;
   flex-direction: column;
@@ -700,13 +593,21 @@ nav {
   align-items: flex-end;
 }
 
-/* line 44, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_banner.scss */
 .productos__img img {
   width: 100%;
   display: block;
 }
 
-/* line 1, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
+.titulo__productos {
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.titulo__productos h2 {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
 #contenedor__grilla {
   padding: 2rem 0;
   display: flex;
@@ -715,19 +616,6 @@ nav {
   align-items: center;
 }
 
-/* line 9, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
-.titulo__productos {
-  text-align: center;
-  padding-top: 2rem;
-}
-
-/* line 14, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
-.titulo__productos h2 {
-  font-size: 3rem;
-  font-weight: bold;
-}
-
-/* line 19, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
 #grilla__productos {
   display: grid;
   grid-gap: 2.5rem;
@@ -737,7 +625,6 @@ nav {
   padding: 1rem;
 }
 
-/* line 28, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
 .producto__contenedor {
   text-align: center;
   border: 1px solid #1d5c63;
@@ -746,12 +633,10 @@ nav {
   transition: transform .2s;
 }
 
-/* line 36, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
 .producto__contenedor div {
   padding-bottom: 4px;
 }
 
-/* line 40, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
 .producto__item {
   border-top-left-radius: 0.7rem;
   border-top-right-radius: 0.7rem;
@@ -762,23 +647,19 @@ nav {
   border-bottom: 1px solid #1d5c63;
 }
 
-/* line 50, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
 .producto__precio {
   font-weight: bold;
   font-size: 20px;
 }
 
-/* line 55, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
 .producto__item:hover {
   filter: brightness(100%);
 }
 
-/* line 59, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
 .producto__contenedor:hover {
   transform: scale(102%);
 }
 
-/* line 63, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
 .boton__producto {
   position: relative;
   font-size: 12px;
@@ -795,26 +676,10 @@ nav {
   cursor: pointer;
 }
 
-/* line 79, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
-.boton__producto::before {
-  content: '';
-  display: block;
-  position: absolute;
-  z-index: 0;
-  bottom: 0;
-  left: 0;
-  height: 0px;
-  width: 100%;
-  background: #198754;
-  transition: 0.2s;
-}
-
-/* line 92, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
 .boton__producto .label {
   position: relative;
 }
 
-/* line 96, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
 .boton__producto .icon {
   display: flex;
   align-items: center;
@@ -828,24 +693,33 @@ nav {
   transition: 0.3s;
 }
 
-/* line 109, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
 .boton__producto span {
   color: white;
 }
 
-/* line 113, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
+.boton__producto::before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 0;
+  bottom: 0;
+  left: 0;
+  height: 0px;
+  width: 100%;
+  background: #198754;
+  transition: 0.2s;
+}
+
 .boton__producto:hover::before {
   height: 100%;
 }
 
-/* line 117, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_grilla-productos.scss */
 .boton__producto:hover .icon {
   top: 0;
   opacity: 1;
 }
 
 @media (max-width: 1200px) {
-  /* line 2, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_mq.scss */
   #grilla__productos {
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(4, 1fr);
@@ -853,30 +727,24 @@ nav {
 }
 
 @media (max-width: 768px) {
-  /* line 9, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_mq.scss */
   .banner__productos {
     background-image: url(../assets/img/productos/banner/banner-productos-mobil.jpg);
   }
-  /* line 13, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_mq.scss */
   .banner__productos div {
     background-color: rgba(0, 0, 0, 0.411);
   }
-  /* line 17, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_mq.scss */
   .productos__img {
     display: none;
   }
-  /* line 21, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_mq.scss */
   .producto__item {
     filter: brightness(100%);
   }
-  /* line 25, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_mq.scss */
   .producto__contenedor:hover {
     transform: scale(100%);
   }
 }
 
 @media (max-width: 850px) {
-  /* line 31, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_mq.scss */
   #grilla__productos {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(6, 1fr);
@@ -884,18 +752,15 @@ nav {
 }
 
 @media (max-width: 768px) {
-  /* line 38, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_mq.scss */
   .titulo__productos h2 {
     font-size: 2.5rem;
   }
 }
 
 @media (max-width: 580px) {
-  /* line 44, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_mq.scss */
   .titulo__productos h2 {
     font-size: 2rem;
   }
-  /* line 48, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/productos/_mq.scss */
   #grilla__productos {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(auto, 1fr);
@@ -903,7 +768,6 @@ nav {
 }
 
 /* Contacto */
-/* line 1, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .section__contacto {
   background-image: url("../assets/img/contacto/contacto pc.jpg");
   background-repeat: no-repeat;
@@ -916,14 +780,13 @@ nav {
   align-items: center;
 }
 
-/* line 13, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .section__titulo {
   width: 100%;
   text-align: center;
   font-size: 2.7rem;
+  margin-top: 5rem;
 }
 
-/* line 19, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .section__titulo h1,
 .contacto__contenedor {
   padding: 1rem;
@@ -931,22 +794,11 @@ nav {
   backdrop-filter: blur(2px);
 }
 
-/* line 26, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
-.section__titulo {
-  margin-top: 5rem;
-}
-
-/* line 30, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .contacto__contenedor {
   margin: 1rem 0;
-}
-
-/* line 34, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
-.contacto__contenedor {
   display: flex;
 }
 
-/* line 38, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .contenedor__articulo {
   display: flex;
   flex-direction: column;
@@ -955,39 +807,32 @@ nav {
   text-align: center;
 }
 
-/* line 46, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
-.contenedor__formulario {
-  width: 55%;
-  text-align: center;
-}
-
-/* line 51, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .contenedor__articulo div {
   padding: .7rem;
 }
 
-/* line 55, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .contenedor__articulo div p {
   text-align: justify;
   padding: .3rem 0;
 }
 
-/* line 60, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
+.contenedor__formulario {
+  width: 55%;
+  text-align: center;
+}
+
 .color__font {
   color: #ede6db;
 }
 
-/* line 64, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .formulario h3 {
   font-size: 2rem;
 }
 
-/* line 68, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .formulario__items {
   padding: .5rem;
 }
 
-/* line 72, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .formulario__item {
   width: 80%;
   padding: .5rem;
@@ -997,13 +842,11 @@ nav {
   background-color: rgba(0, 0, 0, 0.473);
 }
 
-/* line 81, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .formulario_textArea textarea {
   resize: none;
   height: 150px;
 }
 
-/* line 86, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .formulario__checkbox {
   display: flex;
   justify-content: start;
@@ -1012,24 +855,20 @@ nav {
   margin: auto;
 }
 
-/* line 94, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .formulario__checkbox label {
   padding-left: 5px;
 }
 
-/* line 98, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .formulario__checkbox label:hover {
   opacity: 0.7;
 }
 
-/* line 102, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .formulario__item--boton {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-/* line 108, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .boton__contacto {
   font-family: inherit;
   font-size: 20px;
@@ -1045,36 +884,30 @@ nav {
   transition: all 0.2s;
 }
 
-/* line 123, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .boton__contacto span {
   display: block;
   margin-left: 0.3rem;
   transition: all 0.3s ease-in-out;
 }
 
-/* line 129, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .boton__contacto svg {
   display: block;
   transform-origin: center center;
   transition: transform 0.3s ease-in-out;
 }
 
-/* line 135, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .boton__contacto:hover .svg-wrapper {
   animation: fly-1 0.6s ease-in-out infinite alternate;
 }
 
-/* line 139, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .boton__contacto:hover svg {
   transform: translateX(1.2rem) rotate(45deg) scale(1.1);
 }
 
-/* line 143, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .boton__contacto:hover span {
   transform: translateX(5rem);
 }
 
-/* line 147, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_section-contacto.scss */
 .boton__contacto:active {
   transform: scale(0.95);
 }
@@ -1089,83 +922,67 @@ nav {
 }
 
 @media (max-width: 769px) {
-  /* line 2, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_mq.scss */
   .section__titulo {
     margin-top: 6.5rem;
   }
-  /* line 6, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_mq.scss */
   .section__contacto {
     background-image: url("../assets/img/contacto/contacto mobile.jpg");
   }
-  /* line 10, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_mq.scss */
   .contacto__contenedor {
     flex-direction: column;
     justify-content: center;
     align-items: center;
   }
-  /* line 16, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_mq.scss */
   .contenedor__articulo {
     width: 100%;
   }
-  /* line 20, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_mq.scss */
   .contenedor__formulario {
     width: 100%;
   }
 }
 
 @media (max-width: 480px) {
-  /* line 26, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_mq.scss */
   .section__titulo {
     font-size: 2rem;
   }
-  /* line 30, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_mq.scss */
   .formulario__items label {
     font-size: 1rem;
   }
 }
 
 @media (max-width: 380px) {
-  /* line 36, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/contacto/_mq.scss */
   .formulario__items label {
     font-size: 0.9rem;
   }
 }
 
 /* FAQs */
-/* line 2, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/faqs/_faqs.scss */
 .section__carousel {
   width: 90%;
   margin: auto;
   margin-top: 3.7rem;
 }
 
-/* line 8, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/faqs/_faqs.scss */
 .main__faqs--titulo {
   text-align: center;
   padding-bottom: 1rem;
 }
 
-/* line 13, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/faqs/_faqs.scss */
 .accordion {
   width: 80%;
 }
 
 @media (max-width: 768px) {
-  /* line 2, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/faqs/_mq.scss */
   .section__carousel {
     width: 100%;
   }
-  /* line 6, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/faqs/_mq.scss */
   .main__faqs {
     width: 90%;
   }
 }
 
 @media (max-width: 480px) {
-  /* line 12, ../../Users/Franco León/Desktop/CODERHOUSE/Proyecto/scss/faqs/_mq.scss */
   .main__faqs--titulo h1 {
     font-size: 1.5rem;
   }
 }
-
-/*# sourceMappingURL=styles.css.map */

@@ -22,12 +22,11 @@
     color: rgb(65, 125, 122);
 }
 
-.contacto__item a {
-    color: rgb(26, 60, 64);
-}
-
 .contacto__item {
     list-style: none;
+    a {
+        color: rgb(26, 60, 64);
+    }
 }
 
 .contacto__titulo {
@@ -44,11 +43,10 @@
 
 .redes__link {
     display: inline;
-}
-
-.redes__link a {
-    text-decoration: none;
-    margin-left: 1rem;
+    a {
+        text-decoration: none;
+        margin-left: 1rem;
+    }
 }
 
 .copyright {
@@ -85,10 +83,9 @@
 
     .redes__link {
         display: block;
-    }
-
-    .redes__link a {
-        margin: 0;
+        a {
+            margin: 0;
+        }
     }
 
     .copyright {
