@@ -1,0 +1,15 @@
+@media (max-width: 768px) {
+    .section__carousel {
+        width: 100%;
+    }
+
+    .main__faqs {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .main__faqs--titulo h1 {
+        font-size: 1.5rem;
+    }
+}

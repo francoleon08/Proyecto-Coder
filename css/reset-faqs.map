@@ -1,0 +1,12 @@
+{
+	"version": 3,
+	"file": "reset-faqs.css",
+	"sources": [
+		"../scss/reset-faqs.scss"
+	],
+	"sourcesContent": [
+		"ol, ul {\r\n    padding-left: 0;\r\n}\r\n\r\ndl, ol, ul {\r\n    margin: 0;\r\n}\r\n\r\np {\r\n    margin-top: 0;\r\n    margin-bottom: 0;\r\n}"
+	],
+	"names": [],
+	"mappings": ";;AAAA,AAAA,EAAE,EAAE,EAAE,CAAC;EACH,YAAY,EAAE,CAAC;CAClB;;;AAED,AAAA,EAAE,EAAE,EAAE,EAAE,EAAE,CAAC;EACP,MAAM,EAAE,CAAC;CACZ;;;AAED,AAAA,CAAC,CAAC;EACE,UAAU,EAAE,CAAC;EACb,aAAa,EAAE,CAAC;CACnB"
+}

@@ -1,0 +1,39 @@
+@media (max-width: 769px) {
+    .section__titulo {
+        margin-top: 6.5rem;
+    }
+
+    .section__contacto {
+        background-image: url('../assets/img/contacto/contacto\ mobile.jpg');
+    }
+
+    .contacto__contenedor {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contenedor__articulo {
+        width: 100%;
+    }
+
+    .contenedor__formulario {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .section__titulo {
+        font-size: 2rem;
+    }
+
+    .formulario__items label {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 380px) {
+    .formulario__items label {
+        font-size: 0.9rem;
+    }
+}

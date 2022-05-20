@@ -1,0 +1,159 @@
+.section__contacto {
+    background-image: url('../assets/img/contacto/contacto\ pc.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__titulo {
+    width: 100%;
+    text-align: center;
+    font-size: 2.7rem;
+}
+
+.section__titulo h1,
+.contacto__contenedor {
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.473);
+    backdrop-filter: blur(2px);
+}
+
+.section__titulo {
+    margin-top: 5rem;
+}
+
+.contacto__contenedor {
+    margin: 1rem 0;
+}
+
+.contacto__contenedor {
+    display: flex;
+}
+
+.contenedor__articulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 45%;
+    text-align: center;
+}
+
+.contenedor__formulario {
+    width: 55%;
+    text-align: center;
+}
+
+.contenedor__articulo div {
+    padding: .7rem;
+}
+
+.contenedor__articulo div p {
+    text-align: justify;
+    padding: .3rem 0;
+}
+
+.color__font {
+    color: rgb(237, 230, 219);
+}
+
+.formulario h3 {
+    font-size: 2rem;
+}
+
+.formulario__items {
+    padding: .5rem;
+}
+
+.formulario__item {
+    width: 80%;
+    padding: .5rem;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    font-family: 'Quicksand', 'Roboto', sans-serif;
+    background-color: rgba(0, 0, 0, 0.473);
+}
+
+.formulario_textArea textarea {
+    resize: none;
+    height: 150px;
+}
+
+.formulario__checkbox {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+
+.formulario__checkbox label {
+    padding-left: 5px;
+}
+
+.formulario__checkbox label:hover {
+    opacity: 0.7;
+}
+
+.formulario__item--boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boton__contacto {
+    font-family: inherit;
+    font-size: 20px;
+    background-color: rgb(254, 251, 231);
+    color: rgb(29, 92, 99);
+    padding: 0.3rem 1rem;
+    padding-left: 0.9rem;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-radius: .7rem;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+
+.boton__contacto span {
+    display: block;
+    margin-left: 0.3rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.boton__contacto svg {
+    display: block;
+    transform-origin: center center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.boton__contacto:hover .svg-wrapper {
+    animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+
+.boton__contacto:hover svg {
+    transform: translateX(1.2rem) rotate(45deg) scale(1.1);
+}
+
+.boton__contacto:hover span {
+    transform: translateX(5rem);
+}
+
+.boton__contacto:active {
+    transform: scale(0.95);
+}
+
+@keyframes fly-1 {
+    from {
+        transform: translateY(0.1em);
+    }
+
+    to {
+        transform: translateY(-0.1em);
+    }
+}

@@ -1,0 +1,52 @@
+@media (max-width: 1200px) {
+    #grilla__productos {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .banner__productos {
+        background-image: url(../assets/img/productos/banner/banner-productos-mobil.jpg);
+    }
+
+    .banner__productos div {
+        background-color: rgba(0, 0, 0, 0.411);
+    }
+
+    .productos__img {
+        display: none;
+    }
+
+    .producto__item {
+        filter: brightness(100%);
+    }
+
+    .producto__contenedor:hover {
+        transform: scale(100%);
+    }
+}
+
+@media (max-width: 850px) {
+    #grilla__productos {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .titulo__productos h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 580px) {
+    .titulo__productos h2 {
+        font-size: 2rem;
+    }
+
+    #grilla__productos {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto, 1fr);
+    }
+}

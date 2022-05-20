@@ -1,0 +1,34 @@
+.contenedor__boton {
+    padding: 1rem;
+}
+
+.boton__animado:hover,
+.boton__animado:focus {
+    box-shadow: inset 0 -3.25em 0 0 var(--hover);
+}
+
+.boton__animado {
+    --color: rgb(29, 92, 99);
+    --hover: rgb(65, 125, 122);
+}
+
+.boton__animado {
+    color: var(--color);
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+}
+
+.boton__animado:hover,
+.boton__animado:focus {
+    border-color: var(--hover);
+    color: #fff;
+}
+
+.boton__animado {
+    background-color: rgb(221, 221, 221);
+    border-radius: .7rem;
+    border: 2px solid rgb(29, 92, 99);
+    margin: 0.5em;
+    padding: 1em 2em;
+    text-decoration: none;
+}

@@ -1,0 +1,120 @@
+#contenedor__grilla {
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo__productos {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.titulo__productos h2 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+#grilla__productos {
+    display: grid;
+    grid-gap: 2.5rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    align-items: center;
+    padding: 1rem;
+}
+
+.producto__contenedor {
+    text-align: center;
+    border: 1px solid rgb(29, 92, 99);
+    border-radius: 0.7rem;
+    box-shadow: 0.5rem 0.5rem 0.5rem rgb(221, 221, 221);
+    transition: transform .2s;
+}
+
+.producto__contenedor div {
+    padding-bottom: 4px;
+}
+
+.producto__item {
+    border-top-left-radius: 0.7rem;
+    border-top-right-radius: 0.7rem;
+    width: 250px;
+    height: 300px;
+    object-fit: cover;
+    filter: brightness(80%);
+    border-bottom: 1px solid rgb(29, 92, 99);
+}
+
+.producto__precio {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.producto__item:hover {
+    filter: brightness(100%);
+}
+
+.producto__contenedor:hover {
+    transform: scale(102%);
+}
+
+.boton__producto {
+    position: relative;
+    font-size: 12px;
+    letter-spacing: 1px;
+    height: 3em;
+    padding: 0 3em;
+    margin-bottom: 5px;
+    border: none;
+    background-color: #198754;
+    color: #fff;
+    text-transform: uppercase;
+    overflow: hidden;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton__producto::before {
+    content: '';
+    display: block;
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: 0;
+    height: 0px;
+    width: 100%;
+    background: #198754;
+    transition: 0.2s;
+}
+
+.boton__producto .label {
+    position: relative;
+}
+
+.boton__producto .icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 3em;
+    width: 3em;
+    position: absolute;
+    top: 3em;
+    right: 0;
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.boton__producto span {
+    color: white;
+}
+
+.boton__producto:hover::before {
+    height: 100%;
+}
+
+.boton__producto:hover .icon {
+    top: 0;
+    opacity: 1;
+}

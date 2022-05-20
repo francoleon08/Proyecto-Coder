@@ -1,0 +1,183 @@
+/* Header (Responsive) */
+
+header {
+    overflow: hidden;
+    position: fixed;
+    /* Set the navbar to fixed position */
+    top: 0;
+    /* Position the navbar at the top of the page */
+    width: 100%;
+    /* Full width */
+    z-index: 999;
+}
+
+:root {
+    --ancho: 1.5em;
+    --alto: calc(var(--ancho) / 5);
+    --arriba: calc(var(--ancho) / 5 * -2);
+    --abajo: calc(var(--ancho) / 5 * 2);
+    --close: crimson;
+    --open: rgb(26, 60, 64);
+    --bg1: #eee;
+    --bg2: #212836;
+    --light: #fafafa;
+    --medium: #567;
+    --dark: #202025;
+    --main: darkturquoise;
+}
+
+.icon {
+    display: none;
+    width: var(--ancho);
+    height: var(--ancho);
+    cursor: pointer;
+    position: relative;
+}
+
+.toggle {
+    display: none;
+}
+
+.hamburguer {
+    display: block;
+    width: var(--ancho);
+    height: var(--alto);
+    background: var(--open);
+    position: absolute;
+    top: var(--abajo);
+    transition: all .3s ease-in-out;
+}
+
+.hamburguer:before,
+.hamburguer:after {
+    content: "";
+    display: block;
+    width: var(--ancho);
+    height: var(--alto);
+    background: var(--open);
+    position: absolute;
+    top: var(--arriba);
+    transition: inherit;
+}
+
+.hamburguer:after {
+    top: var(--abajo);
+}
+
+.toggle:checked+.icon>.hamburguer {
+    background: var(--close);
+    transform: rotate(45deg);
+}
+
+.toggle:checked+.icon>.hamburguer:before {
+    background: var(--close);
+    top: 0;
+    transform: rotate(90deg);
+}
+
+.toggle:checked+.icon>.hamburguer:after {
+    background: var(--close);
+    top: 0;
+    transform: rotate(90deg);
+}
+
+nav {
+    width: 100%;
+    background-color: #F9EBC8;
+    /* background-image: linear-gradient(to top, rgb(237, 230, 219), rgb(182, 177, 169)); */
+    color: rgb(26, 60, 64);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 1s ease;
+    position: relative;
+}
+
+.logo a img {
+    width: 60px;
+    height: auto;
+    padding: 5px;
+}
+
+.menu-title {
+    display: none;
+    text-align: center;
+}
+
+.menu {
+    text-align: center;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.menu__item {
+    list-style: none;
+    padding: 0 1rem;
+}
+
+.menu__link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.menu__item a {
+    color: rgb(26, 60, 64);
+    text-decoration: none;
+    --clippy: polygon(0 0, 0 0, 0 100%, 0% 100%);
+}
+
+.menu__item a::after {
+    content: "";
+    display: block;
+    background: rgb(26, 60, 64);
+    width: 90%;
+    margin-top: 3px;
+    height: 3px;
+    clip-path: var(--clippy);
+    transition: clip-path .4s;
+}
+
+.menu__item a:hover {
+    --clippy: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.logo a img:hover {
+    opacity: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+    .icon {
+        display: inline-block;
+    }
+
+    nav {
+        padding: 0 .3rem;
+    }
+
+    .menu {
+        display: none;
+        width: 100%;
+    }
+
+    .menu__item {
+        width: 100%;
+    }
+
+    .menu,
+    .menu__link {
+        width: 100%;
+    }
+
+    .toggle:checked~.menu {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo a img {
+        width: 48px;
+    }
+}

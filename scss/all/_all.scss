@@ -1,0 +1,48 @@
+/* reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(254, 251, 231);
+}
+
+/* CLASES GENERALES */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+label,
+span {
+    font-family: 'Quicksand', 'Roboto', sans-serif;
+}
+
+h1,
+a {
+    color: rgb(26, 60, 64);
+}
+
+h2,
+h3,
+span {
+    color: rgb(29, 92, 99);
+}
+
+p {
+    color: rgb(65, 125, 122);
+}
+
+/* clase general para todos los links */
+.link__hover:hover {
+    color: rgb(128, 128, 128);
+}
+
+a {
+    font-weight: bold;
+}
