@@ -339,19 +339,57 @@ nav {
 }
 
 .banner__titulo {
-  font-size: 3rem;
   background-color: rgba(0, 0, 0, 0.5);
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
-.banner__titulo h1 {
+.banner__titulo a {
   color: #ede6db;
-  opacity: 0.7;
+  text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+  font-size: 5rem;
+  font-weight: bold;
+  text-decoration: none;
+  letter-spacing: -3px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-50%);
   border-bottom: 2px solid;
+}
+
+@keyframes tipsy {
+  0% {
+    transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  }
+  100% {
+    transform: translateX(-50%) translateY(-50%) rotate(360deg);
+  }
+}
+
+.banner__titulo a:before,
+.banner__titulo a:after {
+  content: '';
+  padding: .9em .4em;
+  position: absolute;
+  left: 50%;
+  width: 100%;
+  top: 50%;
+  display: block;
+  border: 15px solid;
+  transform: translateX(-50%) translateY(-50%) rotate(0deg);
+  animation: 10s infinite alternate ease-in-out tipsy;
+}
+
+.banner__titulo a:before {
+  border-color: #1a3c40 #1a3c40 rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+  z-index: -1;
+}
+
+.banner__titulo a:after {
+  border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #1a3c40 #1a3c40;
+  box-shadow: 25px 25px 25px rgba(46, 46, 49, 0.8);
 }
 
 .main__index {
@@ -447,6 +485,9 @@ nav {
 }
 
 @media (max-width: 1024px) {
+  .banner__titulo a {
+    font-size: 4rem;
+  }
   .main__index {
     width: 90%;
   }
@@ -469,8 +510,12 @@ nav {
   .banner {
     background-image: url(../assets/img/index/banner-index-mobile.jpg);
   }
-  .banner__titulo {
-    font-size: 2.5rem;
+  .banner__titulo a {
+    font-size: 3rem;
+  }
+  .banner__titulo a:before,
+  .banner__titulo a:after {
+    border: 10px solid #1a3c40;
   }
   .main__index {
     width: 90%;
@@ -499,15 +544,15 @@ nav {
   }
 }
 
-@media (max-width: 560px) {
-  .banner__titulo {
-    font-size: 2rem;
+@media (max-width: 580px) {
+  .banner__titulo a {
+    font-size: 2.5rem;
   }
 }
 
 @media (max-width: 480px) {
-  .banner__titulo {
-    font-size: 1.5rem;
+  .banner__titulo a {
+    font-size: 2rem;
   }
   .main__titulo {
     font-size: 2rem;
@@ -527,11 +572,16 @@ nav {
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
+  .banner__titulo a:before,
+  .banner__titulo a:after {
+    padding: 2.3rem 1rem;
+    border: 7px solid #1b3d41;
+  }
   .banner__titulo {
     text-align: center;
   }
-  .banner__titulo h1 {
+  .banner__titulo a {
     border-bottom: 0 solid;
   }
   .main__titulo {

@@ -1,6 +1,11 @@
 @media (max-width: 1024px) {
+    .banner__titulo a {
+        font-size: 4rem;
+    }
+
     .main__index {
         width: 90%;
+
         h2 {
             font-size: 1.2rem;
         }
@@ -25,8 +30,13 @@
         background-image: url(../assets/img/index/banner-index-mobile.jpg);
     }
 
-    .banner__titulo {
-        font-size: 2.5rem;
+    .banner__titulo a {
+        font-size: 3rem;
+    }
+
+    .banner__titulo a:before,
+    .banner__titulo a:after {
+        border: 10px solid rgb(26, 60, 64);
     }
 
     .main__index {
@@ -48,6 +58,7 @@
 
     .articulo__texto {
         margin-bottom: 2rem;
+
         h2,
         p {
             text-align: center;
@@ -61,15 +72,15 @@
     }
 }
 
-@media (max-width: 560px) {
-    .banner__titulo {
-        font-size: 2rem;
+@media (max-width: 580px) {
+    .banner__titulo a {
+        font-size: 2.5rem;
     }
 }
 
 @media (max-width: 480px) {
-    .banner__titulo {
-        font-size: 1.5rem;
+    .banner__titulo a {
+        font-size: 2rem;
     }
 
     .main__titulo {
@@ -78,6 +89,7 @@
 
     .main__index {
         width: 95%;
+
         h2 {
             font-size: 1rem;
         }
@@ -93,10 +105,16 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 360px) {
+    .banner__titulo a:before,
+    .banner__titulo a:after {
+        padding: 2.3rem 1rem;
+        border: 7px solid rgb(27, 61, 65);
+    }
+
     .banner__titulo {
         text-align: center;
-        h1 {
+        a {
             border-bottom: 0 solid;
         }
     }
