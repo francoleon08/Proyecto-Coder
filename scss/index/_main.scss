@@ -11,7 +11,7 @@
 
 .texto {
     border-radius: 1rem;
-    background-color: #dae5d0;
+    background-color: rgb(218, 229, 208);
     height: fit-content;
     margin: auto;
     padding: 1rem;
@@ -37,7 +37,9 @@
     border-radius: 0.7rem;
     box-shadow: 1rem 1rem 1rem rgb(221, 221, 221);
     filter: brightness(95%);
+    transition: .2s;
     &:hover {
         filter: brightness(100%);
+        transform: scale(105%);
     }
 }

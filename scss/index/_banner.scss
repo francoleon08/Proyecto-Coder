@@ -1,3 +1,5 @@
+$rectangulo-color: rgb(29, 92, 99) rgb(29, 92, 99);
+
 .banner {
     background-image: url(../assets/img/index/banner-index-desktop.jpg);
     background-repeat: no-repeat;
@@ -16,7 +18,7 @@
     height: 100%;
     a {
         color: rgb(237, 230, 219);
-        text-shadow: 0 20px 25px #2e2e31, 0 40px 60px #2e2e31;
+        text-shadow: 0 20px 25px rgb(46, 46, 49), 0 40px 60px rgb(46, 46, 49);
         font-size: 5rem;
         font-weight: bold;
         text-decoration: none;
@@ -55,11 +57,11 @@
 }
 
 .banner__titulo a:before {
-    border-color: rgb(29, 92, 99) rgb(29, 92, 99) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-color: $rectangulo-color rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
     z-index: -1;
 }
 
 .banner__titulo a:after {
-    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(29, 92, 99) rgb(29, 92, 99);
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) $rectangulo-color;
     box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
 }

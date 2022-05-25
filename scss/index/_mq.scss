@@ -1,3 +1,5 @@
+$rectangulo-color: rgb(29, 92, 99);
+
 @media (max-width: 1024px) {
     .banner__titulo a {
         font-size: 4rem;
@@ -7,10 +9,18 @@
 @media (max-width: 992px) {
     .texto {
         h2 {
-        text-align: center;
+            text-align: center;
         }
+
         p {
             padding-left: 0;
+        }
+    }
+
+    .img__index {
+        filter: brightness(100%);
+        &:hover {
+            transform: scale(100%);
         }
     }
 }
@@ -23,12 +33,12 @@
     .banner__titulo a {
         width: 80%;
         text-align: center;
-        border: 0px;    
+        border: 0px;
     }
 
     .banner__titulo a:before,
     .banner__titulo a:after {
-        border: 10px solid rgb(26, 60, 64);
+        border: 10px solid $rectangulo-color;
     }
 
     .main__titulo {
@@ -64,10 +74,11 @@
 }
 
 @media (max-width: 360px) {
+
     .banner__titulo a:before,
     .banner__titulo a:after {
         padding: 3.9rem .7rem;
-        border: 7px solid rgb(29, 92, 99);
+        border: 7px solid $rectangulo-color;
     }
 
     .main__titulo {
