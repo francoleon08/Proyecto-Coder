@@ -43,7 +43,7 @@
 .banner__titulo a:before,
 .banner__titulo a:after {
     content: '';
-    padding: .9em .4em;
+    padding: .9em 3.5em;
     position: absolute;
     left: 50%;
     width: 100%;
@@ -55,11 +55,11 @@
 }
 
 .banner__titulo a:before {
-    border-color: rgb(26, 60, 64) rgb(26, 60, 64) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+    border-color: rgb(29, 92, 99) rgb(29, 92, 99) rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
     z-index: -1;
 }
 
 .banner__titulo a:after {
-    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(26, 60, 64) rgb(26, 60, 64);
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) rgb(29, 92, 99) rgb(29, 92, 99);
     box-shadow: 25px 25px 25px rgba(46, 46, 49, .8);
 }
