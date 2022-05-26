@@ -1181,6 +1181,12 @@ nav {
   }
 }
 
+@media (max-width: 486px) {
+  .banner__ustedes div {
+    margin: 2rem 0 2rem 0;
+  }
+}
+
 @media (max-width: 430px) {
   .banner__ustedes div {
     font-size: 2rem;
