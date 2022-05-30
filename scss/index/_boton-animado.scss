@@ -1,3 +1,5 @@
+@import '../variables/colors';
+
 .contenedor__boton {
     padding: 1rem;
 }
@@ -8,8 +10,8 @@
 }
 
 .boton__animado {
-    --color: rgb(29, 92, 99);
-    --hover: rgb(65, 125, 122);
+    --color: $color-secundario;
+    --hover: $color-parrafos;
 }
 
 .boton__animado {
@@ -25,9 +27,9 @@
 }
 
 .boton__animado {
-    background-color: rgb(221, 221, 221);
+    background-color: #dddddd;
     border-radius: .7rem;
-    border: 2px solid rgb(29, 92, 99);
+    border: 2px solid $color-secundario;
     margin: 0.5em;
     padding: 1em 2em;
     text-decoration: none;

@@ -129,7 +129,6 @@ header {
 nav {
   width: 100%;
   background-color: #F9EBC8;
-  /* background-image: linear-gradient(to top, rgb(237, 230, 219), rgb(182, 177, 169)); */
   color: #1a3c40;
   display: flex;
   flex-wrap: wrap;
@@ -450,8 +449,8 @@ nav {
 }
 
 .boton__animado {
-  --color: rgb(29, 92, 99);
-  --hover: rgb(65, 125, 122);
+  --color: $color-secundario;
+  --hover: $color-parrafos;
 }
 
 .boton__animado {
@@ -573,9 +572,9 @@ nav {
 
 .banner__texto {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   padding: 0 2rem;
 }
 
@@ -618,9 +617,9 @@ nav {
 #contenedor__grilla {
   padding: 2rem 0;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 #grilla__productos {
@@ -689,8 +688,8 @@ nav {
 
 .boton__producto .icon {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
   height: 3em;
   width: 3em;
   position: absolute;
@@ -782,9 +781,9 @@ nav {
   background-position: center center;
   flex-basis: 100%;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .section__titulo {
@@ -872,8 +871,8 @@ nav {
 
 .formulario__item--boton {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .boton__contacto {
@@ -1013,15 +1012,15 @@ nav {
   background-size: cover;
   background-position: center center;
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 .banner__ustedes div {
   display: flex;
   width: max-content;
   height: 40px;
-  color: #f9ebc8;
+  color: #F9EBC8;
   font-size: 3.5rem;
   line-height: 40px;
   position: absolute;

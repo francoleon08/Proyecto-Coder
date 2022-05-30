@@ -1,13 +1,14 @@
+@import '../mixins/flex';
+@import '../variables/colors';
+
 .section__contacto {
     background-image: url('../assets/img/contacto/contacto\ pc.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
     flex-basis: 100%;
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 .section__titulo {
@@ -50,7 +51,7 @@
 }
 
 .color__font {
-    color: rgb(237, 230, 219);
+    color: $color-texto-banner;
 }
 
 .formulario h3 {
@@ -90,16 +91,14 @@
 }
 
 .formulario__item--boton {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
 }
 
 .boton__contacto {
     font-family: inherit;
     font-size: 20px;
-    background-color: rgb(254, 251, 231);
-    color: rgb(29, 92, 99);
+    background-color: #fefbe7;
+    color: $color-secundario;
     padding: 0.3rem 1rem;
     padding-left: 0.9rem;
     display: flex;

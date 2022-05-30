@@ -1,8 +1,11 @@
+@import '../mixins/flex';
+@import '../variables/colors';
+
 /* footer grid */
 .footer {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
-    background-color: #F9EBC8;
+    background-color: $color-nav-footer;
     /* background-image: linear-gradient(to bottom, rgb(237, 230, 219), rgb(182, 177, 169)); */
     margin: auto;
     padding: 0.3rem 0;
@@ -11,21 +14,19 @@
 .footer__contacto,
 .footer__logo,
 .footer__redes {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
 }
 
 .footer__contacto a {
     text-decoration: none;
     padding-left: 1rem;
-    color: rgb(65, 125, 122);
+    color: $color-parrafos;
 }
 
 .contacto__item {
     list-style: none;
     a {
-        color: rgb(26, 60, 64);
+        color: $color-principal;
     }
 }
 
@@ -52,7 +53,7 @@
 .copyright {
     padding: 4px;
     text-align: center;
-    background-color: #F9EBC8;
+    background-color: $color-nav-footer;
     font-weight: bold;
     border-top: .1rem solid rgba(26, 60, 64, 0.171);
 }

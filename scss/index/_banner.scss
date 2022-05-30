@@ -1,4 +1,7 @@
-$rectangulo-color: rgb(29, 92, 99) rgb(29, 92, 99);
+@import '../mixins/flex';
+@import '../variables/colors';
+
+$rectangulo-color: $color-secundario $color-secundario;
 
 .banner {
     background-image: url(../assets/img/index/banner-index-desktop.jpg);
@@ -6,9 +9,7 @@ $rectangulo-color: rgb(29, 92, 99) rgb(29, 92, 99);
     background-size: cover;
     background-position: center center;
     flex-basis: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    @include flex-center;
     height: 100vh;
 }
 
@@ -17,7 +18,7 @@ $rectangulo-color: rgb(29, 92, 99) rgb(29, 92, 99);
     width: 100%;
     height: 100%;
     a {
-        color: rgb(237, 230, 219);
+        color: $color-texto-banner;
         text-shadow: 0 20px 25px rgb(46, 46, 49), 0 40px 60px rgb(46, 46, 49);
         font-size: 5rem;
         font-weight: bold;

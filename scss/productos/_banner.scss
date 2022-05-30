@@ -1,3 +1,6 @@
+@import '../mixins/flex';
+@import '../variables/colors';
+
 .banner__productos {
     display: flex;
     background-image: url(../assets/img/productos/banner/background.jpg);
@@ -12,22 +15,20 @@
 }
 
 .banner__texto {
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
     padding: 0 2rem;
     h1 {
         font-size: 3rem;
         padding-bottom: 2rem;
-        color: rgb(237, 230, 219);
+        color: $color-texto-banner;
         text-align: center;
     }
     p {
         font-size: 1.3rem;
         text-align: center;
         padding-bottom: 1rem;
-        color: rgb(237, 230, 219)
+        color: $color-texto-banner;
     }
 }
 

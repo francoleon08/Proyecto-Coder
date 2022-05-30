@@ -1,3 +1,6 @@
+@import '../mixins/flex';
+@import '../variables/colors';
+
 .titulo__productos {
     text-align: center;
     padding-top: 2rem;
@@ -9,10 +12,8 @@
 
 #contenedor__grilla {
     padding: 2rem 0;
-    display: flex;
+    @include flex-center;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
 }
 
 #grilla__productos {
@@ -26,9 +27,9 @@
 
 .producto__contenedor {
     text-align: center;
-    border: 1px solid rgb(29, 92, 99);
+    border: 1px solid $color-secundario;
     border-radius: 0.7rem;
-    box-shadow: 0.5rem 0.5rem 0.5rem rgb(221, 221, 221);
+    box-shadow: 0.5rem 0.5rem 0.5rem #dddddd;
     transition: transform .2s;
     div {
         padding-bottom: 4px;
@@ -42,7 +43,7 @@
     height: 300px;
     object-fit: cover;
     filter: brightness(80%);
-    border-bottom: 1px solid rgb(29, 92, 99);
+    border-bottom: 1px solid $color-secundario;
 }
 
 .producto__precio {
@@ -76,9 +77,7 @@
         position: relative;
     }
     .icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        @include flex-center;
         height: 3em;
         width: 3em;
         position: absolute;
