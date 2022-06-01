@@ -78,6 +78,16 @@
         flex-direction: column;
     }
 
+    .footer__contacto {
+        ul li {
+            text-align: center;
+        }
+    
+        ul li a {
+            padding: 0;
+        }
+    }
+
     .footer__logo {
         display: none;
     }

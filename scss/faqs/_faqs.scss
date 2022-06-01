@@ -1,7 +1,11 @@
+@import '../variables/colors';
+
 /* FAQs */
 .section__carousel {
-    width: 100%;
+    width: 80%;
+    margin: auto;
     margin-top: 3.7rem;
+    filter: brightness(0.9);
 }
 
 .main__faqs--titulo {
@@ -11,6 +15,17 @@
 
 .accordion {
     width: 80%;
+}
+
+.accordion-body p {
+    a {
+    text-decoration: none;
+    color: $color-secundario;
+    }
+
+    span {
+        font-weight: bold;
+    }
 }
 
 .accordion-button:focus {

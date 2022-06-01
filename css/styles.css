@@ -299,6 +299,12 @@ nav {
   .footer__redes {
     flex-direction: column;
   }
+  .footer__contacto ul li {
+    text-align: center;
+  }
+  .footer__contacto ul li a {
+    padding: 0;
+  }
   .footer__logo {
     display: none;
   }
@@ -959,8 +965,10 @@ nav {
 
 /* FAQs */
 .section__carousel {
-  width: 100%;
+  width: 80%;
+  margin: auto;
   margin-top: 3.7rem;
+  filter: brightness(0.9);
 }
 
 .main__faqs--titulo {
@@ -970,6 +978,15 @@ nav {
 
 .accordion {
   width: 80%;
+}
+
+.accordion-body p a {
+  text-decoration: none;
+  color: #1d5c63;
+}
+
+.accordion-body p span {
+  font-weight: bold;
 }
 
 .accordion-button:focus {
@@ -999,7 +1016,7 @@ nav {
 
 /* Ustedes */
 .banner__ustedes {
-  margin: 4rem 0 2rem 0;
+  margin: 2.7rem 0 2rem 0;
   padding: 10rem 0;
   text-align: center;
   background-image: url("../assets/img/ustedes/banner.png");
