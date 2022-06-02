@@ -18,14 +18,14 @@
     margin-top: 5rem;
 }
 
-.section__titulo h1,
-.contacto__contenedor {
+.section__titulo--item {
     padding: 1rem;
     background-color: rgba(0, 0, 0, 0.473);
     backdrop-filter: blur(2px);
 }
 
 .contacto__contenedor {
+    @extend .section__titulo--item;
     margin: 1rem 0;
     display: flex;
 }

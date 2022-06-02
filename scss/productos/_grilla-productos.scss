@@ -1,5 +1,6 @@
 @import '../mixins/flex';
 @import '../variables/colors';
+@import '../maps/border-radius';
 
 .titulo__productos {
     text-align: center;
@@ -28,7 +29,7 @@
 .producto__contenedor {
     text-align: center;
     border: 1px solid $color-secundario;
-    border-radius: 0.7rem;
+    border-radius: map-get($border-radius, borde-circular);
     box-shadow: 0.5rem 0.5rem 0.5rem #dddddd;
     transition: transform .2s;
     div {
@@ -37,8 +38,8 @@
 }
 
 .producto__item {
-    border-top-left-radius: 0.7rem;
-    border-top-right-radius: 0.7rem;
+    border-top-left-radius: map-get($border-radius, borde-circular);
+    border-top-right-radius: map-get($border-radius, borde-circular);
     width: 250px;
     height: 300px;
     object-fit: cover;

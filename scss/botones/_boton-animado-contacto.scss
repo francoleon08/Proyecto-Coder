@@ -1,3 +1,6 @@
+@import '../mixins/flex';
+@import '../maps/border-radius';
+
 .formulario__item--boton {
     @include flex-center;
 }
@@ -12,7 +15,7 @@
     display: flex;
     align-items: center;
     border: none;
-    border-radius: .7rem;
+    border-radius: map-get($border-radius, borde-circular);
     overflow: hidden;
     transition: all 0.2s;
     span {

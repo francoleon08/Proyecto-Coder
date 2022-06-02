@@ -468,7 +468,7 @@ nav {
 
 .boton__animado {
   background-color: #dddddd;
-  border-radius: .7rem;
+  border-radius: 0.7rem;
   border: 2px solid #1d5c63;
   margin: 0.5em;
   padding: 1em 2em;
@@ -794,8 +794,7 @@ nav {
   margin-top: 5rem;
 }
 
-.section__titulo h1,
-.contacto__contenedor {
+.section__titulo--item, .contacto__contenedor {
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.473);
   backdrop-filter: blur(2px);
@@ -886,7 +885,7 @@ nav {
   display: flex;
   align-items: center;
   border: none;
-  border-radius: .7rem;
+  border-radius: 0.7rem;
   overflow: hidden;
   transition: all 0.2s;
 }
@@ -982,11 +981,22 @@ nav {
 
 .accordion-body p a {
   text-decoration: none;
-  color: #1d5c63;
 }
 
 .accordion-body p span {
   font-weight: bold;
+}
+
+.link-facebook {
+  color: #3b5998;
+}
+
+.link-instagram {
+  color: #dd2a7b;
+}
+
+.link-whatsapp {
+  color: #00bb2d;
 }
 
 .accordion-button:focus {

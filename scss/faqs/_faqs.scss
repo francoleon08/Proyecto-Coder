@@ -1,5 +1,11 @@
 @import '../variables/colors';
 
+$color-redes: (      
+    facebook:  rgb(59, 89, 152),
+    instagram: rgb(221, 42, 123),
+    whatsapp: rgb(0, 187, 45)
+); 
+
 /* FAQs */
 .section__carousel {
     width: 80%;
@@ -20,11 +26,16 @@
 .accordion-body p {
     a {
     text-decoration: none;
-    color: $color-secundario;
     }
 
     span {
         font-weight: bold;
+    }
+}
+
+@each $red, $color in $color-redes {
+    .link-#{$red} {
+        color: $color;
     }
 }
 

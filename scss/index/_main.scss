@@ -1,3 +1,5 @@
+@import '../maps/border-radius';
+
 .main__titulo {
     font-size: 5rem;
     border-top: solid 1px;
@@ -34,7 +36,7 @@
 .img__index {
     max-width: 300px;
     max-height: 300px;
-    border-radius: 0.7rem;
+    border-radius: map-get($border-radius, borde-circular);
     box-shadow: 1rem 1rem 1rem rgb(221, 221, 221);
     filter: brightness(95%);
     transition: .2s;

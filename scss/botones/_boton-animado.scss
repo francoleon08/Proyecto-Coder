@@ -1,4 +1,5 @@
 @import '../variables/colors';
+@import '../maps/border-radius';
 
 .contenedor__boton {
     padding: 1rem;
@@ -23,7 +24,7 @@
 
 .boton__animado {
     background-color: rgb(221, 221, 221);
-    border-radius: .7rem;
+    border-radius: map-get($border-radius, borde-circular);
     border: 2px solid $color-secundario;
     margin: 0.5em;
     padding: 1em 2em;
