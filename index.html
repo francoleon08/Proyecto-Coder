@@ -35,6 +35,9 @@
         integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
     </script>
 
+    <!-- Animate On Scroll Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/reset-faqs.css">
 </head>
@@ -84,7 +87,8 @@
             </div>
             <div class="col-xs-12 col-lg-4 d-flex align-items-center justify-content-center articulo_item" data-tilt
                 data-tilt-scale="0.95" data-tilt-startY="40">
-                <img src="assets/img/index/cabj.jpg" alt="escudo Boca Juniors" class="img-fluid img__index">
+                <img src="assets/img/index/cabj.jpg" alt="escudo Boca Juniors" class="img-fluid img__index"
+                    data-aos="fade-left" data-aos-duration="1500">
             </div>
         </article>
         <article class="row flex-row-reverse fila__index">
@@ -100,7 +104,8 @@
             </div>
             <div class="col-xs-12 col-lg-4 d-flex align-items-center justify-content-center articulo_item" data-tilt
                 data-tilt-scale="0.95" data-tilt-startY="40">
-                <img src="assets/img/index/carp.jpg" alt="escudo River Plate" class="img-fluid img__index">
+                <img src="assets/img/index/carp.jpg" alt="escudo River Plate" class="img-fluid img__index"
+                    data-aos="fade-right" data-aos-duration="1500">
             </div>
         </article>
         <article class="row fila__index">
@@ -116,7 +121,8 @@
             </div>
             <div class="col-xs-12 col-lg-4 d-flex align-items-center justify-content-center articulo_item" data-tilt
                 data-tilt-scale="0.95" data-tilt-startY="40">
-                <img src="assets/img/index/afa.png" alt="escudo AFA" class="img-fluid img__index">
+                <img src="assets/img/index/afa.png" alt="escudo AFA" class="img-fluid img__index" data-aos="fade-left"
+                    data-aos-duration="1500">
             </div>
         </article>
         <article class="row flex-row-reverse fila__index">
@@ -132,10 +138,11 @@
             </div>
             <div class="col-xs-12 col-lg-4 d-flex align-items-center justify-content-center articulo_item" data-tilt
                 data-tilt-scale="0.95" data-tilt-startY="40">
-                <img src="assets/img/index/messeeks.png" alt="cuadro Meeseeks" class="img-fluid img__index">
+                <img src="assets/img/index/messeeks.png" alt="cuadro Meeseeks" class="img-fluid img__index"
+                    data-aos="fade-right" data-aos-duration="1500">
             </div>
         </article>
-        <div class="contenedor__boton text-center my-2">
+        <div class="contenedor__boton text-center my-2" data-aos="fade-down" data-aos-duration="1000">
             <a href="pages/productos.html" class="boton__animado">Ver más productos</a>
         </div>
     </main>
@@ -175,6 +182,12 @@
 
     <!-- script animation card -->
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js'></script>
+
+    <!-- Animate On Scroll Library -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
