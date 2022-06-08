@@ -435,6 +435,8 @@ nav {
 .articulo_item {
   padding: 15px 0;
   margin-top: 10px;
+  overflow-x: hidden;
+  z-index: 1;
 }
 
 .img__index {
@@ -809,6 +811,7 @@ nav {
 .contacto__contenedor {
   margin: 1rem 0;
   display: flex;
+  width: 100%;
 }
 
 .contenedor__articulo {
