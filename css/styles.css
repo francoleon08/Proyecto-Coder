@@ -863,19 +863,81 @@ nav {
 }
 
 .formulario__checkbox {
-  display: flex;
-  justify-content: start;
-  align-items: center;
   width: 80%;
   margin: auto;
+  display: flex;
 }
 
-.formulario__checkbox label {
-  padding-left: 5px;
+#cbx {
+  display: none;
 }
 
-.formulario__checkbox label:hover {
-  opacity: 0.7;
+.boton__newsletter {
+  position: relative;
+  display: block;
+  width: 40px;
+  height: 20px;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  transform: translate3d(0, 0, 0);
+}
+
+.boton__newsletter:before {
+  content: "";
+  position: relative;
+  top: 3px;
+  left: 3px;
+  width: 34px;
+  height: 14px;
+  display: block;
+  background: #9A9999;
+  border-radius: 8px;
+  transition: background .2s ease;
+}
+
+.boton__newsletter span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20px;
+  height: 20px;
+  display: block;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(154, 153, 153, 0.5);
+  transition: all .2s ease;
+}
+
+.boton__newsletter span:before {
+  content: "";
+  position: absolute;
+  display: block;
+  margin: -18px;
+  width: 56px;
+  height: 56px;
+  background: rgba(29, 92, 99, 0.5);
+  border-radius: 50%;
+  transform: scale(0);
+  opacity: 1;
+  pointer-events: none;
+}
+
+#cbx:checked + .boton__newsletter span {
+  background: #1d5c63;
+  transform: translateX(20px);
+  transition: all 0.2s cubic-bezier(0.8, 0.4, 0.3, 1.25), background 0.15s ease;
+  box-shadow: 0 3px 8px rgba(29, 92, 99, 0.2);
+}
+
+#cbx:checked + .boton__newsletter span:before {
+  transform: scale(1);
+  opacity: 0;
+  transition: all .4s ease;
+}
+
+#checkbox__text {
+  margin-left: 5px;
+  font-size: medium;
 }
 
 .formulario__item--boton {
@@ -962,6 +1024,12 @@ nav {
   }
   .formulario__items label {
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 410px) {
+  #checkbox__text {
+    font-size: small;
   }
 }
 

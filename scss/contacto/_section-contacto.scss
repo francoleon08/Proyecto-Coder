@@ -78,17 +78,11 @@
 }
 
 .formulario__checkbox {
-    display: flex;
-    justify-content: start;
-    align-items: center;
     width: 80%;
     margin: auto;
-    label {
-        padding-left: 5px;
-    }
-    label:hover {
-        opacity: 0.7;
-    }
+    display: flex;
 }
+
+@import '../botones/boton-newsletter';
 
 @import '../botones/boton-animado-contacto';

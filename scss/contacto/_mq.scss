@@ -32,6 +32,13 @@
     }
 }
 
+@media (max-width: 410px) {
+    #checkbox__text {
+        font-size: small;
+    }
+    
+}  
+
 @media (max-width: 380px) {
     .formulario__items label {
         font-size: 0.9rem;
