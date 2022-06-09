@@ -435,7 +435,7 @@ nav {
 .articulo_item {
   padding: 15px 0;
   margin-top: 10px;
-  overflow-x: hidden;
+  overflow: hidden;
   z-index: 1;
 }
 
