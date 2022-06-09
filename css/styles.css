@@ -288,6 +288,37 @@ nav {
   border-top: 0.1rem solid rgba(26, 60, 64, 0.171);
 }
 
+.copyright button {
+  background-color: #dae5d0;
+  border: 2px solid #1d5c63;
+  border-radius: .4rem;
+  font-family: 'Roboto';
+  padding: 0 5px;
+  color: #1a3c40;
+}
+
+.copyright button:hover {
+  box-shadow: inset 0 -3.25em 0 0 #417d7a;
+  color: #fff;
+}
+
+.modal-title {
+  font-family: 'Roboto';
+  color: #1a3c40;
+}
+
+.hover-facebook:hover {
+  color: #3b5998;
+}
+
+.hover-github:hover {
+  color: #38485c;
+}
+
+.hover-linkedin:hover {
+  color: #0e76a8;
+}
+
 @media (max-width: 1024px) {
   .header__img {
     width: 18%;

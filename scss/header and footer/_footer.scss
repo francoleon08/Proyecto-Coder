@@ -1,6 +1,12 @@
 @import '../mixins/flex';
 @import '../variables/colors';
 
+$contacto-developer: (
+    facebook: rgb(59, 89, 152),
+    github: rgb(56, 72, 92),
+    linkedin: rgb(14, 118, 168)
+);
+
 /* footer grid */
 .footer {
     display: grid;
@@ -25,6 +31,7 @@
 
 .contacto__item {
     list-style: none;
+
     a {
         color: $color-principal;
     }
@@ -44,6 +51,7 @@
 
 .redes__link {
     display: inline;
+
     a {
         text-decoration: none;
         margin-left: 1rem;
@@ -56,6 +64,34 @@
     background-color: $color-nav-footer;
     font-weight: bold;
     border-top: .1rem solid rgba(26, 60, 64, 0.171);
+
+    button {
+        background-color: rgb(218, 229, 208);
+        border: 2px solid $color-secundario;
+        border-radius: .4rem;
+        font-family: 'Roboto';
+        padding: 0 5px;
+        color: $color-principal;
+
+        &:hover {
+            box-shadow: inset 0 -3.25em 0 0 $color-parrafos;
+            color: #fff;
+        }
+    }
+}
+
+.modal-title {
+    font-family: 'Roboto';
+    color: $color-principal;
+}
+
+@each $contacto,
+$color in $contacto-developer {
+    .hover-#{$contacto} {
+        &:hover {
+            color: $color;
+        }
+    }
 }
 
 @media (max-width: 1024px) {
@@ -82,7 +118,7 @@
         ul li {
             text-align: center;
         }
-    
+
         ul li a {
             padding: 0;
         }
@@ -94,6 +130,7 @@
 
     .redes__link {
         display: block;
+
         a {
             margin: 0;
         }
