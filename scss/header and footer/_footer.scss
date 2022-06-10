@@ -4,7 +4,8 @@
 $contacto-developer: (
     facebook: rgb(59, 89, 152),
     github: rgb(56, 72, 92),
-    linkedin: rgb(14, 118, 168)
+    linkedin: rgb(14, 118, 168),
+    gmail: #ea4335
 );
 
 /* footer grid */
@@ -82,7 +83,6 @@ $contacto-developer: (
 }
 
 .modal-title {
-    font-family: 'Roboto';
     color: $color-principal;
 }
 

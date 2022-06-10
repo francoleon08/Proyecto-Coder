@@ -19,7 +19,8 @@ h6,
 p,
 a,
 label,
-span {
+span,
+button {
   font-family: 'Quicksand', 'Roboto', sans-serif;
 }
 
@@ -303,7 +304,6 @@ nav {
 }
 
 .modal-title {
-  font-family: 'Roboto';
   color: #1a3c40;
 }
 
@@ -317,6 +317,10 @@ nav {
 
 .hover-linkedin:hover {
   color: #0e76a8;
+}
+
+.hover-gmail:hover {
+  color: #ea4335;
 }
 
 @media (max-width: 1024px) {
@@ -1137,7 +1141,7 @@ nav {
 
 /* Ustedes */
 .banner__ustedes {
-  margin: 2.7rem 0 2rem 0;
+  margin: 2rem 0 2rem 0;
   padding: 10rem 0;
   text-align: center;
   background-image: url("../assets/img/ustedes/banner.png");
@@ -1154,7 +1158,7 @@ nav {
   width: max-content;
   height: 40px;
   color: #f9ebc8;
-  font-size: 3.5rem;
+  font-size: 3rem;
   line-height: 40px;
   position: absolute;
   overflow: hidden;
@@ -1304,6 +1308,9 @@ nav {
 }
 
 @media (max-width: 560px) {
+  .banner__ustedes {
+    margin-top: 1.5rem;
+  }
   .banner__ustedes div {
     font-size: 2.7rem;
   }

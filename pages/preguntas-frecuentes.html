@@ -34,6 +34,9 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&display=swap" rel="stylesheet">
+
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -209,7 +212,41 @@
     </footer>
 
     <section class="copyright">
-        <span>© Copyright 2022 Franco León - Todos los Derechos Reservados</span>
+        <span>© Copyright 2022 - Franco León <button type="button" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                ➝ Contacto
+            </button>
+        </span>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                        <span class="modal-title fs-3" id="staticBackdropLabel">Frontend Developer</span>
+                    </div>
+                    <div class="modal-body">
+                        <span>Pagina desarrollada por Franco León - </span>
+                        <span>Redes de contacto:</span>
+                        <div class="m-1">
+                            <a href="https://github.com/francoleon08?tab=repositories" target="_blank"
+                                class="hover-github" rel="nofollow"><i
+                                    class="bx bxl-github bx-lg bx-tada-hover"></i></a>
+                            <a href="https://www.linkedin.com/in/franco-leon-0206b523a/" target="_blank"
+                                class="hover-linkedin" rel="nofollow"><i
+                                    class="bx bxl-linkedin-square bx-lg bx-tada-hover"></i></a>
+                            <a href="https://www.facebook.com/francoleon08/" target="_blank" class="hover-facebook"
+                                rel="nofollow"><i class='bx bxl-facebook-circle bx-lg bx-tada-hover'></i></a>
+                            <a href="mailto:francoleon284@gmail.com" class="hover-gmail"><i
+                                    class='bx bxl-gmail bx-lg bx-tada-hover'></i></a>
+                        </div>
+                        <span>Todos los derechos reservados</span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 </body>
 

@@ -26,8 +26,11 @@
 
 
 @media (max-width: 560px) {
-    .banner__ustedes div {
-        font-size: 2.7rem;
+    .banner__ustedes {
+        margin-top: 1.5rem;
+        div {
+            font-size: 2.7rem;
+        }
     }
 }
 

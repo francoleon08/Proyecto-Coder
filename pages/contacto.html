@@ -11,6 +11,17 @@
     <meta name="description" content="Estamos para ayudarte. Contactate con Cuadros Deco, responderemos al instante.">
     <meta name="keywords" content="CONTACTO, CONTACTO CUADROS DECO, CUADROS, EMAIL, AYUDA, SOLUCIONES">
 
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous">
+    </script>
+
+    <!-- Reset por Bootstrap -->
+    <link rel="stylesheet" href="../css/reset-faqs.css">
+
     <link rel="icon" href="../assets/img/icono.ico">
     <link rel="stylesheet" href="../css/styles.css">
 
@@ -24,6 +35,9 @@
 
     <!-- Animate On Scroll Library -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- BoxIcons -->
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
 <body>
@@ -144,7 +158,41 @@
     </footer>
 
     <section class="copyright">
-        <span>© Copyright 2022 Franco León - Todos los Derechos Reservados</span>
+        <span>© Copyright 2022 - Franco León <button type="button" data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop">
+                ➝ Contacto
+            </button>
+        </span>
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header justify-content-center">
+                        <span class="modal-title fs-3" id="staticBackdropLabel">Frontend Developer</span>
+                    </div>
+                    <div class="modal-body">
+                        <span>Pagina desarrollada por Franco León - </span>
+                        <span>Redes de contacto:</span>
+                        <div class="m-1">
+                            <a href="https://github.com/francoleon08?tab=repositories" target="_blank"
+                                class="hover-github" rel="nofollow"><i
+                                    class="bx bxl-github bx-lg bx-tada-hover"></i></a>
+                            <a href="https://www.linkedin.com/in/franco-leon-0206b523a/" target="_blank"
+                                class="hover-linkedin" rel="nofollow"><i
+                                    class="bx bxl-linkedin-square bx-lg bx-tada-hover"></i></a>
+                            <a href="https://www.facebook.com/francoleon08/" target="_blank" class="hover-facebook"
+                                rel="nofollow"><i class='bx bxl-facebook-circle bx-lg bx-tada-hover'></i></a>
+                            <a href="mailto:francoleon284@gmail.com" class="hover-gmail"><i
+                                    class='bx bxl-gmail bx-lg bx-tada-hover'></i></a>
+                        </div>
+                        <span>Todos los derechos reservados</span>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
     <!-- Animate On Scroll Library -->
