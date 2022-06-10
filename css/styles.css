@@ -346,6 +346,9 @@ nav {
   .footer__contacto ul li a {
     padding: 0;
   }
+  .footer__contacto a {
+    padding-left: 0;
+  }
   .footer__logo {
     display: none;
   }
@@ -596,6 +599,17 @@ nav {
   }
   .boton__link {
     font-size: 0.7rem;
+  }
+}
+
+/* Para resoluciones demasiado angostas (Galaxy Fold) */
+@media (max-width: 290px) {
+  .img__index {
+    max-width: 250px;
+    max-height: 250px;
+  }
+  .boton__animado {
+    padding: .7em;
   }
 }
 

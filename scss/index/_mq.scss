@@ -19,6 +19,7 @@ $rectangulo-color: rgb(29, 92, 99);
 
     .img__index {
         filter: brightness(100%);
+
         &:hover {
             transform: scale(100%);
         }
@@ -95,5 +96,17 @@ $rectangulo-color: rgb(29, 92, 99);
 
     .boton__link {
         font-size: 0.7rem;
+    }
+}
+
+/* Para resoluciones demasiado angostas (Galaxy Fold) */
+@media (max-width: 290px) {
+    .img__index {
+        max-width: 250px;
+        max-height: 250px;
+    }
+
+    .boton__animado {
+        padding: .7em;
     }
 }
