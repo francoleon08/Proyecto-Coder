@@ -1376,7 +1376,8 @@ nav {
 }
 
 .section__error404 section div h1,
-.section__error404 section div h3,
+.section__error404 section div h2,
+.section__error404 section div p,
 .section__error404 section div img,
 .section__error404 section div a {
   padding: .5rem 0;
@@ -1387,7 +1388,7 @@ nav {
   font-size: 3rem;
 }
 
-.section__error404 section div h3 span {
+.section__error404 section div h2 span {
   color: red;
 }
 
