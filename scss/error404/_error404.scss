@@ -1,0 +1,50 @@
+@import '../variables/colors';
+
+.section__error404 {
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url('../assets/img/error404/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+    section {
+        background-color: rgba(0, 0, 0, 0.274);
+        width: 100%;
+
+        div {
+            margin: 1rem;
+            h1,
+            h3,
+            img,
+            a {
+                padding: .5rem 0;
+                color: $color-texto-banner;
+            }
+
+            h1 {
+                font-size: 3rem;
+            }
+
+            h3 {
+                span {
+                    color: red;
+                }
+            }
+
+            img {
+                width: 300px;
+            }
+
+            a {
+                text-decoration: none;
+                font-size: larger;
+            }
+        }
+    }
+
+}

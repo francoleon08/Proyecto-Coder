@@ -1347,3 +1347,50 @@ nav {
     font-size: 1.5rem;
   }
 }
+
+.section__error404 {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: url("../assets/img/error404/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.section__error404 section {
+  background-color: rgba(0, 0, 0, 0.274);
+  width: 100%;
+}
+
+.section__error404 section div {
+  margin: 1rem;
+}
+
+.section__error404 section div h1,
+.section__error404 section div h3,
+.section__error404 section div img,
+.section__error404 section div a {
+  padding: .5rem 0;
+  color: #ede6db;
+}
+
+.section__error404 section div h1 {
+  font-size: 3rem;
+}
+
+.section__error404 section div h3 span {
+  color: red;
+}
+
+.section__error404 section div img {
+  width: 300px;
+}
+
+.section__error404 section div a {
+  text-decoration: none;
+  font-size: larger;
+}
