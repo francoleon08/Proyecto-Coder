@@ -744,7 +744,7 @@ nav {
   position: relative;
 }
 
-.boton__producto .icon {
+.boton__producto .icon_cardProductos {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -778,7 +778,7 @@ nav {
   height: 100%;
 }
 
-.boton__producto:hover .icon {
+.boton__producto:hover .icon_cardProductos {
   top: 0;
   opacity: 1;
 }
