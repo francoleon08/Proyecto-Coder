@@ -238,7 +238,6 @@ nav {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
   background-color: #f9ebc8;
-  /* background-image: linear-gradient(to bottom, rgb(237, 230, 219), rgb(182, 177, 169)); */
   margin: auto;
   padding: 0.3rem 0;
 }
