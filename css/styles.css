@@ -48,6 +48,11 @@ a {
   font-weight: bold;
 }
 
+/* Ocultar banner botom 000webhostapp */
+.disclaimer {
+  display: none;
+}
+
 /* Header (Responsive) */
 header {
   overflow: hidden;
